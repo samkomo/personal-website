@@ -92,12 +92,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.2"
-          bundler-cache: false
-      - name: Install Bundler and Gems 💎
-        run: |
-          gem install bundler --no-document --version "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1 | xargs)" || gem install bundler --no-document
-          bundle config set --local path 'vendor/bundle'
-          bundle install --jobs 4 --retry 3
+          bundler-cache: true
       - name: Setup Node.js 📦
         uses: actions/setup-node@v4
         with:
