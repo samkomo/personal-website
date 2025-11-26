@@ -92,8 +92,16 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.2"
-          bundler-cache: true
+          bundler-cache: false
+      - name: Refresh lockfile platforms and native gems 🔄
+        env:
+          BUNDLE_FORCE_RUBY_PLATFORM: "true"
+        run: |
+          bundle lock --add-platform x86_64-linux
+          bundle lock --update ffi nokogiri --conservative
       - name: Install Ruby gems 📦
+        env:
+          BUNDLE_FORCE_RUBY_PLATFORM: "true"
         run: |
           bundle config set path vendor/bundle
           bundle install --jobs 4 --retry 3
