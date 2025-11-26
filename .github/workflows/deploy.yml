@@ -77,8 +77,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
-          bundler-cache: true
-          bundler-cache-dependency-path: Gemfile.lock
+          bundler-cache: false
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
@@ -94,14 +93,15 @@ jobs:
       - name: Install system dependencies 🔧
         run: |
           sudo apt-get update
-          sudo apt-get install -y imagemagick build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev
+          sudo apt-get install -y imagemagick build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev nodejs npm
       - name: Install Python dependencies 🐍
         run: |
           pip3 install --upgrade nbconvert || true
       - name: Install Ruby dependencies 💎
         run: |
-          bundle config set --local deployment 'false'
-          bundle install
+          gem install bundler
+          bundle config set --local path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
       - name: Build site 🏗️
         run: |
           export JEKYLL_ENV=production
