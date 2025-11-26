@@ -20,6 +20,7 @@ Education authorities in Kenya lack visibility into school performance, resource
 **How can we create an integrated data platform that provides comprehensive school profiling and enables evidence-based resource allocation for education authorities?**
 
 The education data challenges include:
+
 - **Data fragmentation**: School data scattered across multiple systems and formats
 - **Lack of visibility**: Education authorities cannot see comprehensive school profiles
 - **Resource allocation inefficiency**: Decisions made without data-driven insights
@@ -102,6 +103,7 @@ MCEA addresses critical challenges in education analytics and digital governance
 ## Research Contributions
 
 This work contributes to:
+
 1. **Education data integration** methodologies
 2. **Real-time anomaly detection** in education systems
 3. **Mobile data collection** for resource-constrained environments

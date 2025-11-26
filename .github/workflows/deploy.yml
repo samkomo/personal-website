@@ -76,41 +76,40 @@ jobs:
       - name: Install system dependencies 🔧
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev imagemagick nodejs npm
+          sudo apt-get install -y \
+            build-essential \
+            zlib1g-dev \
+            libssl-dev \
+            libreadline-dev \
+            libyaml-dev \
+            libsqlite3-dev \
+            libxml2-dev \
+            libxslt1-dev \
+            libcurl4-openssl-dev \
+            libffi-dev \
+            imagemagick
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.2"
-          bundler-cache: false
-      - name: Install Bundler and Gems 💎
+          bundler-cache: true
+        env:
+          BUNDLE_FORCE_RUBY_PLATFORM: "true"
+      - name: Configure Bundler for Linux builds 📦
+        env:
+          BUNDLE_FORCE_RUBY_PLATFORM: "true"
         run: |
-          gem install bundler --no-document --version "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1 | xargs)" || gem install bundler --no-document
-          bundle config set --local path 'vendor/bundle'
-          bundle install --jobs 4 --retry 3
+          bundle config set force_ruby_platform true
+      - name: Setup Node.js 📦
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
-      - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
-        with:
-          commitChange: false
-          valueFile: "_config.yml"
-          propertyPath: "giscus.repo"
-          value: ${{ github.repository }}
-      - name: Install Python dependencies 🐍
-        run: |
-          pip3 install --upgrade nbconvert
-      - name: Build site 🏗️
-        run: |
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
-      - name: Setup Python 🐍
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-          cache: "pip" # caching pip dependencies
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:

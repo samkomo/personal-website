@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Dr. Samuel
-middle_name: 
+middle_name:
 last_name: Karumba
 contact_note: >
   Feel free to reach out via email or connect on social media.
@@ -19,7 +19,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://samkomo.github.io # the base hostname & protocol for your site (update with your GitHub username)
-baseurl: /personal-website # the subpath of your site, e.g. /blog/. Leave blank for root (update if your repo name is different)
+baseurl: "/personal-website" # set to "/personal-website" for repository pages; leave blank for user pages or custom domains
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -630,7 +630,7 @@ jekyll_get_json:
   # - data: resume
   #   json: assets/json/resume.json # it can also be an url
 
-# jsonresume:
+  # jsonresume:
   - basics
   - work
   - education
@@ -643,5 +643,3 @@ jekyll_get_json:
   - languages
   - interests
   - references
-
-

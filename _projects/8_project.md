@@ -20,6 +20,7 @@ Global supply chains are notoriously opaque, with critical information scattered
 **How can we create a blockchain-based platform that provides real-time, tamper-proof visibility into global supply chains while maintaining data privacy and enabling seamless integration with existing enterprise systems?**
 
 The supply chain challenges include:
+
 - **Information silos**: Data fragmented across carriers, ports, customs, and logistics providers
 - **Paper-based processes**: Bill of lading, customs documents still largely paper-based
 - **Lack of visibility**: Shippers cannot track shipments in real-time
@@ -102,6 +103,7 @@ TradeLens addressed fundamental challenges in global trade digitization:
 ## Research Contributions
 
 This work pioneered:
+
 1. **Enterprise blockchain** deployment at global scale
 2. **Supply chain digitization** using blockchain
 3. **Consortium blockchain** governance models

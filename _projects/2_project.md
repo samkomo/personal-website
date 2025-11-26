@@ -18,6 +18,7 @@ As blockchain-based energy trading systems scale, they become attractive targets
 **How can we create a blockchain framework that provides hardware-anchored device identity, ensures data authenticity, and protects against cyberattacks in decentralized energy flexibility markets?**
 
 The security challenges include:
+
 - **Device identity spoofing**: Malicious actors can clone device credentials to inject false flexibility offers
 - **False Data Injection (FDI) attacks**: Compromised devices can submit fraudulent energy flexibility data
 - **Man-in-the-Middle (MitM) attacks**: Interception and modification of energy trading transactions
@@ -98,6 +99,7 @@ PlexiChain mitigates critical security threats in blockchain-based energy system
 ## Research Contributions
 
 This work advances the state-of-the-art in:
+
 1. **Hardware-software co-design** for blockchain security
 2. **PUF-based device attestation** in energy systems
 3. **NFT applications** beyond digital art to critical infrastructure

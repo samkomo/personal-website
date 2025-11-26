@@ -1,29 +1,29 @@
 <div class="publications-summary-section">
   {% comment %} Only show citation metrics {% endcomment %}
-  {% assign metrics = entry.contents | where_exp: "item", "item.name == 'Total Citations' or item.name == 'h-index' or item.name == 'i10-index'" %}
-  
+  {% assign metrics = entry.contents | where_exp: 'item', "item.name == 'Total Citations' or item.name == 'h-index' or item.name == 'i10-index'" %}
+
   {% comment %} Citation Metrics Section {% endcomment %}
   <div class="pub-metrics-section">
     <div class="pub-metrics-grid">
       {% for content in metrics %}
-        {% assign display_value = "" %}
-        {% if content.value_dynamic contains "scholar_metrics.citations.all" %}
+        {% assign display_value = '' %}
+        {% if content.value_dynamic contains 'scholar_metrics.citations.all' %}
           {% if site.data.scholar_metrics and site.data.scholar_metrics.citations and site.data.scholar_metrics.citations.all %}
-            {% assign display_value = site.data.scholar_metrics.citations.all | append: "" %}
+            {% assign display_value = site.data.scholar_metrics.citations.all | append: '' %}
           {% else %}
-            {% assign display_value = "N/A" %}
+            {% assign display_value = 'N/A' %}
           {% endif %}
-        {% elsif content.value_dynamic contains "scholar_metrics.h_index.all" %}
+        {% elsif content.value_dynamic contains 'scholar_metrics.h_index.all' %}
           {% if site.data.scholar_metrics and site.data.scholar_metrics.h_index and site.data.scholar_metrics.h_index.all %}
-            {% assign display_value = site.data.scholar_metrics.h_index.all | append: "" %}
+            {% assign display_value = site.data.scholar_metrics.h_index.all | append: '' %}
           {% else %}
-            {% assign display_value = "N/A" %}
+            {% assign display_value = 'N/A' %}
           {% endif %}
-        {% elsif content.value_dynamic contains "scholar_metrics.i10_index.all" %}
+        {% elsif content.value_dynamic contains 'scholar_metrics.i10_index.all' %}
           {% if site.data.scholar_metrics and site.data.scholar_metrics.i10_index and site.data.scholar_metrics.i10_index.all %}
-            {% assign display_value = site.data.scholar_metrics.i10_index.all | append: "" %}
+            {% assign display_value = site.data.scholar_metrics.i10_index.all | append: '' %}
           {% else %}
-            {% assign display_value = "N/A" %}
+            {% assign display_value = 'N/A' %}
           {% endif %}
         {% endif %}
         <div class="pub-metric-item">
@@ -37,7 +37,7 @@
       {% endfor %}
     </div>
   </div>
-  
+
   {% comment %} Citations Chart {% endcomment %}
   {% if site.data.scholar_metrics and site.data.scholar_metrics.citations_by_year and site.data.scholar_metrics.citations_by_year.years.size > 0 %}
     <div class="citations-chart-container mt-3">
@@ -50,7 +50,7 @@
         {% if site.data.scholar_metrics.citations_by_year.years %}
           const years = {{ site.data.scholar_metrics.citations_by_year.years | jsonify }};
           const citations = {{ site.data.scholar_metrics.citations_by_year.citations | jsonify }};
-          
+
           const ctx = document.getElementById('citationsChart');
           if (ctx) {
             if (typeof Chart !== 'undefined') {
@@ -91,7 +91,7 @@
           }
         {% endif %}
       }
-      
+
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initCitationsChart);
       } else {
@@ -102,82 +102,82 @@
 </div>
 
 <style>
-.publications-summary-section {
-  margin-top: 0.5rem;
-}
-
-.pub-metrics-section {
-  margin-bottom: 1.5rem;
-}
-
-.pub-metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.pub-metric-item {
-  background-color: var(--global-card-bg-color);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  transition: all 0.2s ease;
-}
-
-.pub-metric-item:hover {
-  border-color: var(--global-theme-color);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
-}
-
-.pub-metric-label {
-  display: block;
-  font-size: 0.85rem;
-  color: var(--global-text-color);
-  opacity: 0.8;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.pub-metric-value {
-  display: block;
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--global-theme-color);
-  line-height: 1.2;
-}
-
-.pub-metric-link {
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.pub-metric-link:hover {
-  color: var(--global-theme-color);
-  text-decoration: underline;
-}
-
-.citations-chart-container {
-  background-color: var(--global-card-bg-color);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 8px;
-  padding: 1rem;
-}
-
-.pub-chart-title {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--global-theme-color);
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-@media (max-width: 768px) {
-  .pub-metrics-grid {
-    grid-template-columns: 1fr;
+  .publications-summary-section {
+    margin-top: 0.5rem;
   }
-}
+
+  .pub-metrics-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .pub-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .pub-metric-item {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+
+  .pub-metric-item:hover {
+    border-color: var(--global-theme-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .pub-metric-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--global-text-color);
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .pub-metric-value {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--global-theme-color);
+    line-height: 1.2;
+  }
+
+  .pub-metric-link {
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .pub-metric-link:hover {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+  }
+
+  .citations-chart-container {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .pub-chart-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--global-theme-color);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 768px) {
+    .pub-metrics-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>

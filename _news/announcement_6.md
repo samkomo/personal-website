@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Paper accepted at IEEE ICBC 2023: "BAILIF: A Blockchain Agnostic Interoperability Framework" 📄
-

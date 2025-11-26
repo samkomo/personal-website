@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Paper accepted at ACM ICTD 2017: "Towards Blockchain-enabled School Information Hub" (Cited by 111) 📄
-

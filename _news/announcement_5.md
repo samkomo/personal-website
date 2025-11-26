@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Paper accepted at IEEE ICBC 2024: "CypherChain: A Privacy-Preserving Data Aggregation Framework for Blockchain-Based DR Programs" 📄
-

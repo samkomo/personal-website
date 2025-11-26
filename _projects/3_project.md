@@ -18,6 +18,7 @@ Demand Response (DR) programs require energy consumers to submit flexibility off
 **How can we enable privacy-preserving aggregation of Demand Response offers on a blockchain while maintaining verifiability and market efficiency?**
 
 The privacy challenges include:
+
 - **Data exposure**: On-chain storage of DR offers reveals individual consumer preferences and behavior
 - **Inference attacks**: Adversaries can infer sensitive information from aggregated data and transaction patterns
 - **Regulatory compliance**: Energy data privacy regulations require protection of individual consumer information
@@ -99,6 +100,7 @@ CypherChain maintains transactional transparency while preserving the anonymity 
 ## Research Contributions
 
 This work contributes novel approaches to:
+
 1. **Privacy-preserving blockchain** design for energy systems
 2. **SMPC-HE integration** for efficient private aggregation
 3. **Inference attack mitigation** in blockchain-based markets

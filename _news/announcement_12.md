@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Patent granted: US9961139B2 - Cooperative Download among Low-End Devices Under Resource-Constrained Environment 🎉
-

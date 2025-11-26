@@ -20,6 +20,7 @@ Voluntary carbon markets are experiencing explosive growth as corporations commi
 **How can we create a transparent, traceable, and fraud-resistant system for carbon credit certification using blockchain technology?**
 
 The carbon market challenges include:
+
 - **Lack of transparency**: Current systems don't provide public visibility into credit issuance and retirement
 - **Double-counting risk**: Credits can be sold multiple times or counted in multiple registries
 - **Fraud vulnerability**: Manual verification processes are susceptible to manipulation
@@ -102,6 +103,7 @@ CCDI addresses critical challenges in climate finance and digital carbon markets
 ## Research Contributions
 
 This work contributes to:
+
 1. **Blockchain-based carbon markets** design and implementation
 2. **Digital MRV** methodologies for carbon credits
 3. **Regulatory-compliant** blockchain systems

@@ -10,30 +10,30 @@
   redirect: null
   content: |
     HARB (Hypergraph-based Adaptive consoRtium Blockchain) is a blockchain architecture designed to address the scalability limitations of decentralized energy systems through a hypergraph-based adaptive consortium blockchain model.
-    
+
     ## Key Features
-    
+
     - **Topology-aware blockchain substructures** using hypergraph theory
     - **Dynamic node grouping** by energy region for optimized consensus
     - **Scalable transaction routing** and delegation mechanisms
     - **Reduced latency** through consensus decentralization
-    
+
     ## Technologies
-    
+
     - Hypergraph Theory
     - Sub-chain Partitioning
     - Adaptive Clustering
     - Smart Contracts
     - Custom Consortium Consensus
-    
+
     ## Outcomes
-    
+
     - Published in **IEEE Internet of Things Journal** (Impact Factor: 8.2)
     - Outperformed single-chain and PoA models in simulation
     - Formed the architectural foundation for PlexiChain
-    
+
     ## Impact
-    
+
     HARB addresses blockchain scalability challenges in energy systems infrastructure, enabling smart grid optimization through regional decentralization models. The framework serves as a backbone consensus for hierarchical energy marketplaces with localized governance.
 
 - key: plexichain
@@ -48,30 +48,30 @@
   redirect: null
   content: |
     PlexiChain is a secure blockchain-based flexibility trading framework that integrates Physical Unclonable Functions (PUFs) and Non-Fungible Tokens (NFTs) to strengthen device identity, ensure data authenticity, and protect decentralized Internet of Things (IoT) nodes.
-    
+
     ## Key Features
-    
+
     - **Hardware-level device attestation** using Physical Unclonable Functions
     - **Tokenized access and rights management** through NFT-based asset tokens
     - **Anomaly-aware data validation** for detecting cyberattacks
     - **Proof-of-Flexibility transaction model** for energy flexibility markets
-    
+
     ## Technologies
-    
+
     - Physical Unclonable Functions (PUFs)
     - NFT-based Asset Tokens
     - Ethereum Smart Contracts
     - Lightweight Encryption
     - Multi-Agent Consensus Modules
-    
+
     ## Outcomes
-    
+
     - Simulated for 3-node energy system under adversarial conditions
     - Published as **arXiv preprint** (arXiv:2212.09064)
     - Formed security backbone for BAILIF cross-chain validation
-    
+
     ## Impact
-    
+
     PlexiChain mitigates attacks such as False Data Injection (FDI) and MadIoT through multi-layered anomaly detection and hardware-anchored cryptographic integrity. It serves as the security and governance layer for real-time smart grid negotiations in microgrids and carbon markets.
 
 - key: cypherchain
@@ -86,30 +86,30 @@
   redirect: null
   content: |
     CypherChain is a blockchain-based framework that enables privacy-preserving Demand Response (DR) offer aggregation by combining Secure Multiparty Computation (SMPC), Homomorphic Encryption (HE), and Hypergraph Partitioning.
-    
+
     ## Key Features
-    
+
     - **Private energy transaction aggregation** without exposing individual offers
     - **Confidential offer submission and resolution** using cryptographic techniques
     - **On-chain verifiability** without data exposure
     - **Resilience to inference and reconstruction attacks**
-    
+
     ## Technologies
-    
+
     - Secure Multiparty Computation (SMPC)
     - Homomorphic Encryption (HE)
     - Hypergraph Partitioning
     - Decentralized Registries (DR)
     - Private Smart Contracts
-    
+
     ## Outcomes
-    
+
     - Integrated into PhD thesis as privacy layer architecture
     - Demonstrated through DR simulation environment
     - Published at **IEEE ICBC 2024**
-    
+
     ## Impact
-    
+
     CypherChain maintains transactional transparency while preserving the anonymity and confidentiality of energy agent offers. It serves as the cryptographic privacy core for federated energy markets, enabling regulation-compliant confidentiality and secure peer coordination.
 
 - key: bailif
@@ -124,30 +124,30 @@
   redirect: null
   content: |
     BAILIF (Blockchain-Agnostic Interoperability Framework) is designed to overcome interoperability barriers by supporting atomic swaps, cross-chain data exchange, and identity resolution across blockchains.
-    
+
     ## Key Features
-    
+
     - **Blockchain-agnostic transaction layer** supporting multiple blockchain networks
     - **Policy-governed asset mapping** for secure cross-chain transfers
     - **Trust-neutral exchange architecture** using oracles and notary nodes
     - **Selective disclosure** across platforms for privacy preservation
-    
+
     ## Technologies
-    
+
     - Atomic Cross-Chain Swaps
     - Oracles
     - Notary Nodes
     - Digital Identity Anchors (DIDs)
     - Policy-Aware Transaction Bridges
-    
+
     ## Outcomes
-    
+
     - Demonstrated secure cross-chain asset swaps in energy token simulation
     - Published and presented at **IEEE ICBC 2023**
     - Cited in energy interoperability whitepapers
-    
+
     ## Impact
-    
+
     BAILIF enables secure interoperability between heterogeneous blockchain networks without requiring consensus synchronization. It serves as the interoperability backbone for digital trust ecosystems across smart grids, carbon markets, and decentralized IoT infrastructures.
 
 - key: caeser
@@ -164,36 +164,36 @@
   period: 2023-2024
   content: |
     CAESER (Cybersecurity of Consumer Energy Resources) is a national cybersecurity project focused on decentralized energy infrastructure. It addresses emerging threats in DERs (Distributed Energy Resources) using event-driven resilience, machine learning, and policy-guided cyber defense.
-    
+
     ## Key Features
-    
+
     - **Adversarial modeling** for CER behavior and attack scenarios
     - **Edge-aware anomaly detection** for smart grid infrastructure
     - **Simulated DER-Cyber attack scenarios** for threat assessment
     - **Testbed integration** with smart grid technology stack
-    
+
     ## Technologies
-    
+
     - Event-driven Security Modeling
     - Privacy-aware Coordination Protocols
     - Post-Quantum Cryptography (PQC)
     - Trusted Execution Environments
     - Multi-Agent Threat Detection
-    
+
     ## My Role
-    
+
     As **Postdoctoral Research Fellow – Energy Cybersecurity** at CSIRO, I:
     - Participated in design of secure data aggregation protocols
     - Co-developed system-level threat models for smart grid coordination
     - Supported prototyping and evaluation of CER security algorithms
     - Contributed to simulation environments and system validation strategies
-    
+
     ## Impact
-    
+
     CAESER provides a policy-aware reference framework for national energy infrastructure cybersecurity, addressing distributed infrastructure protection, privacy in smart grids, and energy sector risk modeling.
-    
+
     ## Status
-    
+
     **Active** (2023-2024) - Cross-institutional collaboration with CSIRO Cybersecurity Systems and UNSW Energy Informatics groups.
 
 - key: ccdi
@@ -210,42 +210,42 @@
   period: 2022-2023
   content: |
     CCDI (Carbon Certification & Development Initiative) aimed to bridge the gap between voluntary carbon credit markets and emerging digital trust mechanisms. The system explored digital MRV (Measurement, Reporting, and Verification) workflows using decentralized ledger technology.
-    
+
     ## Key Features
-    
+
     - **Digital MRV pipelines** for carbon crediting
     - **Smart contract enforcement** of credit issuance
     - **Decentralized audit logs** for transparency
     - **Selective transparency** for verification bodies
-    
+
     ## Technologies
-    
+
     - Blockchain-based Verification
     - Decentralized Identity (DID)
     - Zero-Knowledge Proofs
     - Smart Contract Governance
     - Secure Oracle Integration
-    
+
     ## My Role
-    
+
     As **Principal Investigator / System Architect** at UNSW, I:
     - Designed protocol for digital MRV in voluntary carbon markets
     - Coordinated with legal/compliance advisors on VCS alignment
     - Developed prototype on permissioned blockchain infrastructure
     - Drafted internal whitepaper and pre-publication technical report
-    
+
     ## Outcomes
-    
+
     - 3 industrial pilot engagements across Southeast Asia
     - Carbon credit traceability improved by 20%
     - Integrated into UNSW research portfolio for climate governance
-    
+
     ## Impact
-    
+
     CCDI addresses climate finance, digital carbon markets, trust architecture for environmental credits, and decentralized governance. The framework is designed to evolve into a modular infrastructure layer for tokenized carbon credit marketplaces across the Asia-Pacific.
-    
+
     ## Status
-    
+
     **Completed** (2022-2023) - Academic-industry co-research project.
 
 - key: agri-wallet
@@ -263,43 +263,43 @@
   patent: US11497156B2
   content: |
     Agri-Wallet introduced a decentralized wallet system allowing farmers to book, pay for, and track mechanized services using blockchain for transaction security and AI for demand prediction. The system was piloted in partnership with Hello Tractor and supported by CTA.
-    
+
     ## Key Features
-    
+
     - **Digital booking platform** for tractor services
     - **Token-based payment** and credit logging
     - **Farmer-facing mobile wallet** with blockchain backend
     - **Integration of field data** from IoT devices
-    
+
     ## Technologies
-    
+
     - Blockchain (Permissioned Ledger)
     - AI-based Demand Prediction
     - IoT-enabled Tractor Monitoring
     - Smart Contract-enabled Booking
     - SMS/USSD Mobile Integration
-    
+
     ## My Role
-    
+
     As **Blockchain and Mobile Integration Engineer** at IBM Research Africa, I:
     - Designed the mobile wallet integration layer
     - Implemented smart contract logic for bookings and payments
     - Co-developed secure token transaction protocol
     - Supported field deployment and training in rural Kenya
-    
+
     ## Outcomes
-    
+
     - Over **2,000 farmers served** in pilot
     - **Granted patent** (US11497156B2)
     - Presented at ICT4D 2019 and AI for Good Summit
     - Featured in IBM Research Africa portfolio
-    
+
     ## Impact
-    
+
     Agri-Wallet addresses agricultural technology, blockchain for development, financial inclusion, and IoT-enabled mechanization. The system is designed to expand into pan-African blockchain-based platforms for agri-credit, input traceability, and mechanization-as-a-service.
-    
+
     ## Status
-    
+
     **Completed** (2018-2019) - Industry-led prototype with NGO/Startup collaboration. Patented.
 
 - key: tradelens
@@ -316,43 +316,43 @@
   period: 2016-2018
   content: |
     TradeLens is one of the most significant early implementations of enterprise blockchain. It created an open and neutral platform for global trade, allowing parties to track shipments, share documentation, and automate workflows securely.
-    
+
     ## Key Features
-    
+
     - **Event-sourced supply chain visibility** across actors
     - **Chain-of-custody verification** for shipments
     - **Customs document exchange** with digital signatures
     - **Pluggable enterprise integration** layers
-    
+
     ## Technologies
-    
+
     - Hyperledger Fabric
     - Permissioned Blockchain Architecture
     - Container Event APIs
     - Smart Contract Automation
     - Encrypted Data Channels
-    
+
     ## My Role
-    
+
     As **Blockchain Developer (Early-stage Prototyping)** at IBM Research Africa, I:
     - Contributed to early container event ingestion models
     - Developed API wrappers for logistics integration
     - Supported simulation and verification testing of blockchain-backed shipment records
     - Prototyped visualization tools for customs workflows
-    
+
     ## Outcomes
-    
+
     - Digitized **>100,000 container events**
     - Integrated with Maersk, CMA CGM, and **600+ ports**
     - Published case study by IBM
     - Retired in 2022 after commercialization phase
-    
+
     ## Impact
-    
+
     TradeLens addressed supply chain digitization, blockchain for logistics, trade facilitation, and enterprise consortium networks. The platform laid the groundwork for future sovereign logistics chains with embedded digital trust and AI-based optimization.
-    
+
     ## Status
-    
+
     **Completed** (2016-2018) - Commercialized (retired 2022). Global IBM cross-lab research with industry co-development.
 
 - key: clc
@@ -370,43 +370,43 @@
   patent: US9961139B2
   content: |
     CLC is a cognitive tutoring system designed to monitor student learning behavior using embedded sensors and machine learning. It identifies when a learner is stuck, distracted, or progressing, and delivers adaptive instructional feedback accordingly.
-    
+
     ## Key Features
-    
+
     - **Eye-tracking + keystroke monitoring** for engagement profiling
     - **Context-aware feedback model** for personalized instruction
     - **Offline sync** and rural classroom integration
     - **Teacher-assist dashboards** for cohort tracking
-    
+
     ## Technologies
-    
+
     - Multimodal Sensor Fusion
     - Machine Learning for Attention Estimation
     - Embedded Devices (Raspberry Pi)
     - Real-time Feedback Loops
     - Bluetooth Low-Energy + Android Mobile SDK
-    
+
     ## My Role
-    
+
     As **Research Engineer – Embedded Intelligence** at IBM Research Africa, I:
     - Built the embedded device firmware and Bluetooth integrations
     - Developed machine learning models for learner state detection
     - Led field deployment and data collection
     - Co-authored publication and co-inventor on patent
-    
+
     ## Outcomes
-    
+
     - Pilot deployed across **5 Kenyan classrooms**
     - **US patent granted**: US9961139B2
     - Published in **ACM MOBILESoft '16**
     - Contributed to Kenya's digital literacy program architecture
-    
+
     ## Impact
-    
+
     CLC addresses AI for education, cognitive systems, learning analytics, and human-computer interaction (HCI). The system serves as a foundation for AI tutors embedded in digital literacy initiatives across Sub-Saharan Africa and emerging markets.
-    
+
     ## Status
-    
+
     **Completed** (2014-2017) - Research-driven public sector collaboration. Patented + Published.
 
 - key: mcea
@@ -423,42 +423,41 @@
   period: 2015-2018
   content: |
     MCEA was a field-deployed analytics system aimed at improving visibility into school performance, resource needs, and infrastructure readiness. The platform digitized school-level indicators, integrated them with census and test score data, and provided dashboards for local education authorities.
-    
+
     ## Key Features
-    
+
     - **Multi-source school data integration** from various sources
     - **Real-time anomaly detection** on performance metrics
     - **Custom dashboards** for regional directors
     - **Offline field agent data sync** & conflict resolution
-    
+
     ## Technologies
-    
+
     - Data Warehousing (MySQL/Postgres)
     - Interactive Dashboards
     - Data Cleaning Pipelines
     - Geo-tagged School Profiles
     - Mobile Data Collection (Open Data Kit – ODK)
-    
+
     ## My Role
-    
+
     As **Field Analytics Developer** at IBM Research Africa, I:
     - Built core school profile database schema
     - Engineered ETL pipeline for education performance metrics
     - Deployed and maintained field agent data capture toolchain
     - Trained local education officers on data usage
-    
+
     ## Outcomes
-    
+
     - Digitized profiles for **100+ schools**
     - Improved resource allocation accuracy by **40%**
     - Reduced data reporting delays by **25%**
     - Used by education ministry for **3 regional interventions**
-    
-    ## Impact
-    
-    MCEA addresses education analytics, data for development, digital governance, and sub-national decision support. The platform is designed to evolve into a national education data backbone supporting AI-based policy optimization.
-    
-    ## Status
-    
-    **Completed** (2015-2018) - Deployed Prototype. Cross-sector public-private partnership.
 
+    ## Impact
+
+    MCEA addresses education analytics, data for development, digital governance, and sub-national decision support. The platform is designed to evolve into a national education data backbone supporting AI-based policy optimization.
+
+    ## Status
+
+    **Completed** (2015-2018) - Deployed Prototype. Cross-sector public-private partnership.
