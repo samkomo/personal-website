@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Paper accepted at IEEE ICSE-SEIS 2017: "Deploying Large Scale School Census Hub: An Experience Report" 📄
-

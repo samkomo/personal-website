@@ -21,6 +21,7 @@ Primary education in Sub-Saharan Africa faces severe challenges: large class siz
 **How can we create an adaptive learning system that monitors student engagement, identifies learning difficulties, and delivers personalized feedback in resource-constrained classroom environments?**
 
 The educational challenges include:
+
 - **Large class sizes**: Teachers cannot provide individual attention to 50+ students
 - **Limited resources**: Schools lack computers, internet, and educational technology
 - **Learning detection**: Teachers cannot identify when students are stuck or disengaged
@@ -103,6 +104,7 @@ CLC addresses critical challenges in AI for education and learning analytics:
 ## Research Contributions
 
 This work advances:
+
 1. **Multimodal sensor fusion** for learning analytics
 2. **Offline AI systems** for resource-constrained environments
 3. **Personalized learning** in large classroom settings

@@ -18,6 +18,7 @@ Decentralized energy trading systems face a fundamental scalability challenge: t
 **How can we design a blockchain architecture that simultaneously achieves high scalability, maintains decentralization, and supports the real-time transaction requirements of decentralized energy trading systems?**
 
 The core challenges include:
+
 - **Scalability bottleneck**: Single-chain architectures cannot process the transaction throughput needed for large-scale energy markets
 - **Latency constraints**: Energy trading requires near real-time transaction confirmation, which traditional blockchains cannot guarantee
 - **Geographic distribution**: Energy systems are inherently distributed, requiring consensus mechanisms that respect network topology
@@ -91,6 +92,7 @@ HARB addresses fundamental blockchain scalability challenges in energy systems i
 ## Research Contributions
 
 This work contributes novel insights into:
+
 1. **Hypergraph-based blockchain partitioning** for distributed systems
 2. **Adaptive consensus mechanisms** that respect network topology
 3. **Scalability analysis** of partitioned blockchain architectures
