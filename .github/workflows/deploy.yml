@@ -78,6 +78,7 @@ jobs:
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+          bundler-cache-dependency-path: Gemfile.lock
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
@@ -90,10 +91,19 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: Install and Build 🔧
+      - name: Install system dependencies 🔧
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
+          sudo apt-get update
+          sudo apt-get install -y imagemagick build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev
+      - name: Install Python dependencies 🐍
+        run: |
           pip3 install --upgrade nbconvert || true
+      - name: Install Ruby dependencies 💎
+        run: |
+          bundle config set --local deployment 'false'
+          bundle install
+      - name: Build site 🏗️
+        run: |
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
