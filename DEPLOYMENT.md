@@ -53,7 +53,7 @@ If you want to use a custom domain (e.g., `samuelkarumba.com`):
 3. **Update `_config.yml`:**
    ```yaml
    url: https://yourdomain.com
-   baseurl: "" # Empty for root domain (set to "/personal-website" for repository pages)
+   baseurl: "" # Empty for root domain
    ```
 
 ## 🔍 Manual Deployment
