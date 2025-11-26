@@ -12,8 +12,10 @@ The site automatically deploys when you push to the `main` branch. The deploymen
 
 ## 📋 Pre-Deployment Checklist
 
-- [x] ✅ URL updated in `_config.yml`: `https://samkomo.github.io`
-- [x] ✅ Base URL configured: `/personal-website`
+- [x] ✅ URL updated in `_config.yml` (e.g., `https://samkomo.github.io`)
+- [x] ✅ Base URL configured for your Pages type:
+  - `""` for user/organization pages or custom domains
+  - `"/personal-website"` for repository pages
 - [x] ✅ GitHub Actions workflow configured
 - [x] ✅ All changes committed and pushed
 
@@ -51,7 +53,7 @@ If you want to use a custom domain (e.g., `samuelkarumba.com`):
 3. **Update `_config.yml`:**
    ```yaml
    url: https://yourdomain.com
-   baseurl: "" # Empty for root domain
+   baseurl: "/personal-website" # Use "/personal-website" for repository pages; clear for root or custom domains
    ```
 
 ## 🔍 Manual Deployment
