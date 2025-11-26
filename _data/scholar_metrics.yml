@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2025-01-09'
+  last_updated: "2025-01-09"
 citations:
   all: 340
   since_2020: 311
@@ -12,4 +12,3 @@ i10_index:
 citations_by_year:
   years: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
   citations: [5, 15, 25, 40, 55, 68, 65, 60]
-

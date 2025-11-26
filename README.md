@@ -12,6 +12,7 @@ Personal website and portfolio built with [al-folio](https://github.com/alshediv
 ### Local Development with Docker (Recommended)
 
 1. **Start the development server:**
+
    ```bash
    docker compose pull
    docker compose up
@@ -26,11 +27,13 @@ Personal website and portfolio built with [al-folio](https://github.com/alshediv
 ### Local Development without Docker
 
 1. **Install dependencies:**
+
    ```bash
    bundle install
    ```
 
 2. **Start Jekyll server:**
+
    ```bash
    bundle exec jekyll serve
    ```
@@ -43,44 +46,49 @@ Personal website and portfolio built with [al-folio](https://github.com/alshediv
 ### Basic Configuration
 
 1. **Update `_config.yml`:**
+
    - Set your name: `first_name`, `last_name`
-   - Update `url` and `baseurl` for your GitHub Pages deployment
+   - Update `url` and `baseurl` for your GitHub Pages deployment (`baseurl: "/personal-website"` for repository pages, `""` for custom domains)
    - Customize `description` and other site settings
 
 2. **Update Google Scholar Metrics:**
-   
+
    The CV page automatically displays publication counts and citation metrics from your Google Scholar profile. To update these metrics:
-   
+
    ```bash
    # Install Python dependencies (if not already installed)
    pip install -r requirements.txt
-   
+
    # Run the update script
    python3 bin/update_scholar_citations.py
    ```
-   
+
    This script will:
+
    - Fetch your latest citation counts, h-index, and i10-index from Google Scholar
    - Update `_data/scholar_metrics.yml` with the latest metrics
    - Count publications by type from your BibTeX file
-   
+
    **Note:** The script uses the `scholar_userid` from `_data/socials.yml`. Make sure this is set correctly.
-   
+
    **Automation:** You can set up a GitHub Action or cron job to run this script periodically (e.g., daily or weekly) to keep your metrics up-to-date.
 
 3. **Update About Page:**
+
    - Edit `_pages/about.md` with your biography
    - Add your profile picture to `assets/img/prof_pic.jpg`
 
-3. **Add Publications:**
+4. **Add Publications:**
+
    - Edit `_bibliography/papers.bib` with your publications
    - Publications will automatically appear on the publications page
 
-4. **Add Projects:**
+5. **Add Projects:**
+
    - Create new project files in `_projects/` directory
    - See existing examples for format
 
-5. **Add Social Links:**
+6. **Add Social Links:**
    - Edit `_data/socials.yml` to add your social media profiles
 
 ### Key Files to Customize

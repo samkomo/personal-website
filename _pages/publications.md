@@ -10,6 +10,7 @@ nav_order: 2
 <div class="publications-page">
 
 <!-- Bibsearch Feature -->
+
 {% include bib_search.liquid %}
 
 <h2>Journal Articles</h2>

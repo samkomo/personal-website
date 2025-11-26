@@ -18,6 +18,7 @@ The energy sector is adopting multiple blockchain platforms (Ethereum, Hyperledg
 **How can we enable secure, atomic, and policy-aware interoperability between heterogeneous blockchain networks in decentralized energy systems?**
 
 The interoperability challenges include:
+
 - **Blockchain heterogeneity**: Different consensus mechanisms, smart contract languages, and data models
 - **Atomicity requirement**: Cross-chain transactions must be atomic (all-or-nothing) to prevent partial failures
 - **Trust establishment**: How to establish trust between independent blockchain networks
@@ -100,6 +101,7 @@ BAILIF enables secure interoperability between heterogeneous blockchain networks
 ## Research Contributions
 
 This work advances the state-of-the-art in:
+
 1. **Blockchain interoperability** for energy systems
 2. **Atomic cross-chain swaps** with policy enforcement
 3. **Trust-neutral** cross-chain architectures

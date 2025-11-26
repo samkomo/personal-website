@@ -16,6 +16,7 @@ period: 2023-2024
 The rapid integration of Consumer Energy Resources (CERs)—including rooftop solar, home batteries, electric vehicles, and smart inverters—into Australian electricity grids creates unprecedented cybersecurity vulnerabilities. As Australia becomes a global leader in CER deployment, securing a large number of distributed energy resources presents unprecedented challenges. Unlike traditional centralized power plants with controlled security perimeters, CERs are distributed across millions of homes, creating a massive attack surface. Recent incidents have demonstrated that compromised smart inverters can destabilize grid frequency, manipulate energy markets, and cause cascading failures.
 
 **Project Details:**
+
 - **Co-funded by**: CSIRO's Critical Infrastructure Protection and Resilience (CIPR) Initiative and the Cyber Security Cooperative Research Centre (CSCRC)
 - **Collaboration**: CSIRO's Smart Energy Mission (SEM)
 - **Partners**: CSIRO, Edith Cowan University, and University of New South Wales
@@ -38,6 +39,7 @@ The CAESER project addresses four critical research questions:
 **[Q4] Long-term Resilience**: How do these factors play a role in the long-term cyber resilience of CERs in Australia? What are the viable strategies to cope with a growing number of unsecured CERs in the future?
 
 The cybersecurity challenges include:
+
 - **Distributed attack surface**: Millions of CERs create numerous entry points for attackers
 - **Device heterogeneity**: Diverse manufacturers and firmware versions complicate security management
 - **Software vulnerabilities**: Need to examine and address vulnerabilities in CER systems
@@ -114,7 +116,7 @@ The CAESER framework integrates multiple security layers:
 
 ## Outcomes
 
-- **Peer-reviewed publications**: 
+- **Peer-reviewed publications**:
   - "Systematic Study of Cybersecurity Threats for Smart Inverters" (ACM e-Energy 2024) - [DOI: 10.1145/3632775.3661994](https://dl.acm.org/doi/10.1145/3632775.3661994)
   - Additional publications in progress
 - **Research foundation**: Established systematic threat taxonomy and vulnerability assessment framework for smart inverters
@@ -139,6 +141,7 @@ CAESER provides a policy-aware reference framework for national energy infrastru
 ## Research Contributions
 
 This work advances:
+
 1. **Distributed energy cybersecurity** methodologies
 2. **AI-driven threat detection** for smart grids
 3. **Privacy-preserving security** monitoring

@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Journal article published in Journal of Network and Computer Applications: "Temporary Immutability: A Removable Blockchain Solution for Prosumer-side Energy Trading" (Cited by 28) 📄
-

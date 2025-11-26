@@ -236,7 +236,9 @@ div.cv-nested-category {
   border-left: 3px solid var(--global-theme-color);
   padding: 1rem 1.25rem;
   border-radius: 0.25rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 div.cv-nested-category:hover {
