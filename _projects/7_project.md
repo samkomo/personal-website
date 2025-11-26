@@ -21,6 +21,7 @@ Smallholder farmers in Sub-Saharan Africa face significant barriers to accessing
 **How can we create a decentralized platform that enables smallholder farmers to book, pay for, and track mechanized agricultural services using blockchain and IoT technologies?**
 
 The agricultural service challenges include:
+
 - **Market fragmentation**: Service providers and farmers lack efficient matching mechanisms
 - **Payment barriers**: Cash-only transactions limit market participation
 - **Credit access**: Smallholder farmers lack credit history for traditional loans
@@ -103,6 +104,7 @@ Agri-Wallet addresses critical challenges in agricultural technology and financi
 ## Research Contributions
 
 This work demonstrates:
+
 1. **Blockchain applications** in agricultural development
 2. **IoT-blockchain integration** for service verification
 3. **AI-driven demand prediction** for resource-constrained markets

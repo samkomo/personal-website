@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Paper accepted at IEEE ICBC 2020: "A Relational Network Framework for Interoperability in Distributed Energy Trading" 📄
-
