@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://samkomo.github.io/personal-website/sitemap.xml
+Sitemap: https://samkomo.github.io/sitemap.xml
