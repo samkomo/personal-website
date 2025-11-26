@@ -1,0 +1,52 @@
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="project-card">
+    <a href="{% if project.redirect %}{{ project.redirect }}{% elsif project.slug %}{{ project.slug | prepend: '/projects/' | relative_url }}{% else %}/projects/{{ project.key }}/{% endif %}" class="project-link">
+      {% if project.img %}
+        <div class="project-image-wrapper">
+          {% include figure.liquid
+            loading="lazy"
+            path=project.img
+            sizes="(min-width: 768px) 400px, 100vw"
+            alt=project.title
+            class="project-image"
+          %}
+          <div class="project-overlay">
+            <span class="project-category-badge">{{ project.category | capitalize }}</span>
+            {% if project.status %}
+              <span class="project-status-badge status-{{ project.status | downcase }}">{{ project.status }}</span>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+      <div class="project-content">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+        <div class="project-meta">
+          {% if project.period %}
+            <span class="project-period">
+              <i class="fa-solid fa-calendar"></i> {{ project.period }}
+            </span>
+          {% endif %}
+          {% if project.patent %}
+            <span class="project-patent">
+              <i class="fa-solid fa-certificate"></i> Patent: {{ project.patent }}
+            </span>
+          {% endif %}
+          {% if project.related_publications %}
+            <span class="project-publication">
+              <i class="fa-solid fa-file-lines"></i> Published
+            </span>
+          {% endif %}
+        </div>
+        {% if project.github %}
+          <div class="project-links">
+            <a href="{{ project.github }}" target="_blank" class="project-github" onclick="event.stopPropagation();">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </a>
+  </div>
+</div>
+

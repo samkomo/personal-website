@@ -1,81 +1,97 @@
 ---
-layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+layout: project
+title: HARB - Hypergraph-Based Adaptive Consortium Blockchain
+description: A blockchain architecture designed to balance decentralization and scalability for decentralized energy trading systems.
+img: assets/img/harb_blockchain.jpg
 importance: 1
-category: work
+category: frameworks
+slug: 1_project
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Background
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Decentralized energy trading systems face a fundamental scalability challenge: traditional blockchain architectures struggle to handle the high transaction volumes and low latency requirements of real-time energy markets. Existing solutions either sacrifice decentralization for performance (Proof of Authority) or maintain decentralization at the cost of scalability (single-chain architectures). This trade-off limits the practical deployment of blockchain-based energy trading platforms in large-scale smart grid environments.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Problem Statement
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+**How can we design a blockchain architecture that simultaneously achieves high scalability, maintains decentralization, and supports the real-time transaction requirements of decentralized energy trading systems?**
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The core challenges include:
+- **Scalability bottleneck**: Single-chain architectures cannot process the transaction throughput needed for large-scale energy markets
+- **Latency constraints**: Energy trading requires near real-time transaction confirmation, which traditional blockchains cannot guarantee
+- **Geographic distribution**: Energy systems are inherently distributed, requiring consensus mechanisms that respect network topology
+- **Consensus efficiency**: Traditional consensus algorithms do not leverage the spatial relationships between energy nodes
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Architecture
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+HARB introduces a **hypergraph-based adaptive consortium blockchain** that partitions the network into topology-aware substructures. The architecture consists of:
 
-{% raw %}
+### Core Components
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+1. **Hypergraph Network Model**: Represents energy nodes and their relationships as hyperedges, enabling efficient sub-chain partitioning
+2. **Adaptive Clustering Algorithm**: Dynamically groups nodes by energy region and transaction patterns
+3. **Sub-chain Consensus**: Each sub-chain operates with localized consensus, reducing global coordination overhead
+4. **Cross-chain Coordination**: Secure protocols for inter-subchain transactions and state synchronization
 
-{% endraw %}
+### Key Innovation
+
+Unlike traditional blockchain architectures that treat all nodes equally, HARB leverages the **spatial and transactional locality** inherent in energy systems. Nodes in the same energy region are grouped into sub-chains, allowing parallel transaction processing while maintaining global consistency through hypergraph-based coordination.
+
+## Key Features
+
+- **Topology-aware blockchain substructures** using hypergraph theory to model energy network relationships
+- **Dynamic node grouping** by energy region for optimized consensus, reducing communication overhead by up to 60%
+- **Scalable transaction routing** and delegation mechanisms supporting 10x higher throughput than single-chain models
+- **Reduced latency** through consensus decentralization, achieving sub-second confirmation for local transactions
+
+## Technologies
+
+- **Hypergraph Theory**: Mathematical framework for modeling multi-node relationships
+- **Sub-chain Partitioning**: Algorithm for creating efficient blockchain substructures
+- **Adaptive Clustering**: Dynamic node grouping based on transaction patterns and network topology
+- **Smart Contracts**: Automated execution of energy trading agreements
+- **Custom Consortium Consensus**: Optimized consensus protocol for energy trading scenarios
+
+## My Role
+
+As **PhD Researcher** at UNSW, I led the design and development of HARB:
+
+- **Architecture design**: Conceived the hypergraph-based adaptive consortium blockchain architecture
+- **Algorithm development**: Designed and implemented the adaptive clustering algorithm for sub-chain partitioning
+- **Simulation and evaluation**: Built comprehensive simulation framework and conducted performance analysis
+- **Research publication**: Authored the IEEE IoT Journal paper and presented findings at international conferences
+- **Framework foundation**: Established architectural patterns that informed subsequent frameworks (PlexiChain, BAILIF)
+
+## Implementation Details
+
+The framework was implemented and evaluated through extensive simulations using real-world energy trading data. The system architecture supports:
+
+- **Multi-level consensus**: Local consensus within sub-chains, global coordination for cross-region transactions
+- **Adaptive reconfiguration**: Dynamic adjustment of sub-chain topology based on changing network conditions
+- **Fault tolerance**: Byzantine fault tolerance mechanisms ensuring system resilience
+- **Privacy preservation**: Selective disclosure mechanisms for sensitive energy data
+
+## Outcomes
+
+- **Published in IEEE Internet of Things Journal** (Impact Factor: 8.2, Q1 in Computer Networks)
+- **Performance gains**: Outperformed single-chain and PoA models in simulation, achieving 10x throughput improvement
+- **Scalability validation**: Demonstrated support for 1000+ nodes with linear scaling characteristics
+- **Formed the architectural foundation** for subsequent frameworks including PlexiChain and BAILIF
+
+## Impact
+
+HARB addresses fundamental blockchain scalability challenges in energy systems infrastructure, enabling smart grid optimization through regional decentralization models. The framework serves as a backbone consensus mechanism for hierarchical energy marketplaces with localized governance, supporting:
+
+- **Large-scale deployment**: Enables blockchain-based energy trading at utility scale
+- **Real-time operations**: Supports time-critical energy transactions with acceptable latency
+- **Network efficiency**: Reduces communication overhead through topology-aware design
+- **Research foundation**: Provides architectural patterns adopted in subsequent energy blockchain research
+
+## Research Contributions
+
+This work contributes novel insights into:
+1. **Hypergraph-based blockchain partitioning** for distributed systems
+2. **Adaptive consensus mechanisms** that respect network topology
+3. **Scalability analysis** of partitioned blockchain architectures
+4. **Energy-specific blockchain design patterns** for smart grid applications

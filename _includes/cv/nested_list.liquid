@@ -1,16 +1,14 @@
-<ul class="card-text font-weight-light list-group list-group-flush">
+<div class="cv-nested-list">
   {% for content in entry.contents %}
-    <li class="list-group-item">
-      <h5 class="font-italic">{{ content.title }}</h5>
+    <div class="cv-nested-category">
+      <h5 class="cv-category-title">{{ content.title }}</h5>
       {% if content.items %}
-        <ul class="subitems">
+        <ul class="cv-subitems">
           {% for subitem in content.items %}
-            <li>
-              <span class="subitem">{{ subitem }}</span>
-            </li>
+            <li class="cv-subitem">{{ subitem }}</li>
           {% endfor %}
         </ul>
       {% endif %}
-    </li>
+    </div>
   {% endfor %}
-</ul>
+</div>

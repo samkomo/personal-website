@@ -34,6 +34,7 @@ def load_scholar_user_id() -> str:
 
 SCHOLAR_USER_ID: str = load_scholar_user_id()
 OUTPUT_FILE: str = "_data/citations.yml"
+METRICS_FILE: str = "_data/scholar_metrics.yml"
 
 
 def get_scholar_citations() -> None:
@@ -76,6 +77,60 @@ def get_scholar_citations() -> None:
     if not author_data:
         print(
             f"Could not fetch author data for user ID '{SCHOLAR_USER_ID}'. Please verify the Scholar user ID and try again."
+        )
+        sys.exit(1)
+
+    # Extract citations per year from publications
+    citations_by_year = {}
+    if "publications" in author_data:
+        for pub in author_data["publications"]:
+            pub_year = pub.get("bib", {}).get("pub_year")
+            citations = pub.get("num_citations", 0)
+            if pub_year:
+                try:
+                    year = int(pub_year) if isinstance(pub_year, str) else pub_year
+                    if year not in citations_by_year:
+                        citations_by_year[year] = 0
+                    citations_by_year[year] += citations
+                except (ValueError, TypeError):
+                    pass
+    
+    # Sort years and create a list for the chart
+    sorted_years = sorted(citations_by_year.keys())
+    citations_per_year = [citations_by_year.get(year, 0) for year in sorted_years] if sorted_years else []
+    
+    # Extract author-level metrics
+    author_metrics = {
+        "metadata": {"last_updated": today},
+        "citations": {
+            "all": author_data.get("citedby", 0),
+            "since_2020": author_data.get("citedby5y", 0) if "citedby5y" in author_data else 0
+        },
+        "h_index": {
+            "all": author_data.get("hindex", 0),
+            "since_2020": author_data.get("hindex5y", 0) if "hindex5y" in author_data else 0
+        },
+        "i10_index": {
+            "all": author_data.get("i10index", 0),
+            "since_2020": author_data.get("i10index5y", 0) if "i10index5y" in author_data else 0
+        },
+        "citations_by_year": {
+            "years": sorted_years,
+            "citations": citations_per_year
+        }
+    }
+
+    # Save author metrics
+    try:
+        with open(METRICS_FILE, "w") as f:
+            yaml.dump(author_metrics, f, width=1000, sort_keys=True)
+        print(f"Author metrics saved to {METRICS_FILE}")
+        print(f"  Total Citations: {author_metrics['citations']['all']}")
+        print(f"  h-index: {author_metrics['h_index']['all']}")
+        print(f"  i10-index: {author_metrics['i10_index']['all']}")
+    except Exception as e:
+        print(
+            f"Error writing author metrics to {METRICS_FILE}: {e}. Please check file permissions and disk space."
         )
         sys.exit(1)
 

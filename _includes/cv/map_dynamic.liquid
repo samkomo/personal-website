@@ -1,0 +1,60 @@
+<table class="table table-cv table-sm table-borderless table-responsive">
+  {% for content in entry.contents %}
+    <tr>
+      <td class="p-1 pr-2 font-weight-bold">
+        <b>{{ content.name }}</b>
+      </td>
+      <td class="p-1 pl-2 font-weight-light text">
+        {% assign display_value = "" %}
+        
+        {% if content.value_dynamic %}
+          {% comment %} Handle dynamic values based on type {% endcomment %}
+          {% if content.value_dynamic contains "where: 'type', 'article'" %}
+            {% assign journal_count = site.bibliography | where: 'type', 'article' | size %}
+            {% assign display_value = journal_count | append: "" %}
+          {% elsif content.value_dynamic contains "where: 'type', 'inproceedings'" %}
+            {% assign conf_count = site.bibliography | where: 'type', 'inproceedings' | size %}
+            {% assign display_value = conf_count | append: "" %}
+          {% elsif content.value_dynamic contains "where: 'type', 'incollection'" %}
+            {% assign chapter_count = site.bibliography | where: 'type', 'incollection' | size %}
+            {% assign display_value = chapter_count | append: "" %}
+          {% elsif content.value_dynamic contains "scholar_metrics.citations.all" %}
+            {% if site.data.scholar_metrics and site.data.scholar_metrics.citations and site.data.scholar_metrics.citations.all %}
+              {% assign display_value = site.data.scholar_metrics.citations.all | append: "" %}
+            {% else %}
+              {% assign display_value = "N/A" %}
+            {% endif %}
+          {% elsif content.value_dynamic contains "scholar_metrics.h_index.all" %}
+            {% if site.data.scholar_metrics and site.data.scholar_metrics.h_index and site.data.scholar_metrics.h_index.all %}
+              {% assign display_value = site.data.scholar_metrics.h_index.all | append: "" %}
+            {% else %}
+              {% assign display_value = "N/A" %}
+            {% endif %}
+          {% elsif content.value_dynamic contains "scholar_metrics.i10_index.all" %}
+            {% if site.data.scholar_metrics and site.data.scholar_metrics.i10_index and site.data.scholar_metrics.i10_index.all %}
+              {% assign display_value = site.data.scholar_metrics.i10_index.all | append: "" %}
+            {% else %}
+              {% assign display_value = "N/A" %}
+            {% endif %}
+          {% else %}
+            {% assign display_value = content.value_dynamic %}
+          {% endif %}
+        {% elsif content.value %}
+          {% assign display_value = content.value %}
+        {% endif %}
+        
+        {% if display_value != "" %}
+          {% if content.link %}
+            <a href="{{ content.link }}" target="_blank" rel="noopener noreferrer" class="cv-link">{{ display_value }}</a>
+          {% else %}
+            <span class="cv-value">{{ display_value }}</span>
+          {% endif %}
+          {% if content.description %}
+            <span class="cv-description"> — {{ content.description }}</span>
+          {% endif %}
+        {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+

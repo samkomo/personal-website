@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
+gem 'activesupport', '~> 6.1.0'
+gem 'i18n', '~> 1.8.0'
 
 # Core plugins that directly affect site building
 group :jekyll_plugins do

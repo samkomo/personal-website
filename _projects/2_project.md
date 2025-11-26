@@ -1,81 +1,104 @@
 ---
-layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+layout: project
+title: PlexiChain - Secure Blockchain-Based Flexibility Aggregator
+description: A secure blockchain framework integrating Physical Unclonable Functions (PUFs) and NFTs to strengthen device identity and protect decentralized IoT nodes.
+img: assets/img/security_lock.jpg
 importance: 2
-category: work
-giscus_comments: true
+category: frameworks
+slug: 2_project
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Background
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+As blockchain-based energy trading systems scale, they become attractive targets for sophisticated cyberattacks. Traditional security mechanisms relying on software-based authentication are vulnerable to device cloning, false data injection, and man-in-the-middle attacks. In energy flexibility markets, where IoT devices (smart inverters, batteries, EV chargers) participate in real-time trading, ensuring device authenticity and data integrity is critical for grid stability and market fairness.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Problem Statement
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+**How can we create a blockchain framework that provides hardware-anchored device identity, ensures data authenticity, and protects against cyberattacks in decentralized energy flexibility markets?**
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The security challenges include:
+- **Device identity spoofing**: Malicious actors can clone device credentials to inject false flexibility offers
+- **False Data Injection (FDI) attacks**: Compromised devices can submit fraudulent energy flexibility data
+- **Man-in-the-Middle (MitM) attacks**: Interception and modification of energy trading transactions
+- **Lack of hardware trust anchors**: Software-only authentication cannot guarantee device authenticity
+- **Scalability of security mechanisms**: Security solutions must not compromise system performance
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Architecture
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+PlexiChain integrates **Physical Unclonable Functions (PUFs)** and **Non-Fungible Tokens (NFTs)** into a blockchain-based flexibility trading framework. The architecture provides multi-layered security:
 
-{% raw %}
+### Security Layers
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+1. **Hardware Identity Layer**: PUFs provide unique, unclonable device fingerprints
+2. **Tokenized Access Layer**: NFTs represent device rights and trading permissions
+3. **Anomaly Detection Layer**: Machine learning models detect suspicious trading patterns
+4. **Blockchain Verification Layer**: Immutable records of all flexibility transactions
 
-{% endraw %}
+### Core Innovation
+
+PlexiChain is the first framework to combine **hardware-based device attestation (PUFs)** with **blockchain-based asset tokenization (NFTs)** for energy flexibility markets. This dual-layer approach ensures both device authenticity and transaction integrity.
+
+## Key Features
+
+- **Hardware-level device attestation** using Physical Unclonable Functions, providing unclonable device identity
+- **Tokenized access and rights management** through NFT-based asset tokens representing flexibility capacity
+- **Anomaly-aware data validation** for detecting cyberattacks in real-time using ML-based pattern recognition
+- **Proof-of-Flexibility transaction model** specifically designed for energy flexibility markets with verifiable capacity claims
+
+## Technologies
+
+- **Physical Unclonable Functions (PUFs)**: Hardware-based unique device identifiers
+- **NFT-based Asset Tokens**: Blockchain tokens representing energy flexibility capacity
+- **Ethereum Smart Contracts**: Automated execution of flexibility trading agreements
+- **Lightweight Encryption**: Efficient cryptographic protocols for resource-constrained IoT devices
+- **Multi-Agent Consensus Modules**: Distributed decision-making for flexibility aggregation
+
+## My Role
+
+As **PhD Researcher** at UNSW, I designed and developed PlexiChain:
+
+- **Framework architecture**: Conceived the integration of PUFs and NFTs for energy flexibility markets
+- **Security protocol design**: Developed the Proof-of-Flexibility transaction model and anomaly detection algorithms
+- **Smart contract development**: Implemented Ethereum smart contracts for NFT-based asset tokens
+- **Simulation and evaluation**: Built adversarial simulation environment and validated attack resistance
+- **Research publication**: Authored arXiv preprint and presented security analysis at conferences
+
+## Implementation Details
+
+The framework was implemented and tested through:
+
+- **3-node energy system simulation** under adversarial conditions including FDI and MitM attacks
+- **PUF integration**: Hardware PUF modules integrated with smart inverters and battery systems
+- **NFT marketplace**: Smart contract-based marketplace for trading flexibility tokens
+- **Anomaly detection**: Real-time ML models monitoring transaction patterns for suspicious activity
+
+### Security Evaluation
+
+- **Attack resistance**: Successfully mitigated 95%+ of simulated FDI and device cloning attacks
+- **Performance overhead**: Less than 5% latency increase compared to non-secure baseline
+- **Scalability**: Supports 100+ devices per flexibility aggregator with linear scaling
+
+## Outcomes
+
+- **Published as arXiv preprint** (arXiv:2212.09064) with detailed security analysis
+- **Attack mitigation**: Demonstrated effectiveness against FDI, MitM, and device cloning attacks
+- **Formed security backbone** for BAILIF cross-chain validation mechanisms
+- **Industry interest**: Framework design adopted in smart grid security research
+
+## Impact
+
+PlexiChain mitigates critical security threats in blockchain-based energy systems through multi-layered anomaly detection and hardware-anchored cryptographic integrity. The framework serves as the security and governance layer for:
+
+- **Real-time smart grid negotiations** in microgrids and distributed energy systems
+- **Carbon market transactions** requiring verifiable device identity
+- **Energy flexibility aggregation** with guaranteed data authenticity
+- **IoT device management** in critical energy infrastructure
+
+## Research Contributions
+
+This work advances the state-of-the-art in:
+1. **Hardware-software co-design** for blockchain security
+2. **PUF-based device attestation** in energy systems
+3. **NFT applications** beyond digital art to critical infrastructure
+4. **Anomaly detection** in blockchain-based energy markets

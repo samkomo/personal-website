@@ -1,81 +1,108 @@
 ---
-layout: page
-title: project 8
-description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
-importance: 2
-category: work
-giscus_comments: true
+layout: project
+title: TradeLens Global Supply Chain Blockchain
+description: A blockchain-based platform to digitize global supply chains, enabling real-time, tamper-proof sharing of shipping data across ports, carriers, customs, and logistics providers.
+img: assets/img/supply_chain.jpg
+importance: 8
+category: systems
+slug: 8_project
+related_publications: false
+status: Completed
+period: 2016-2018
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Background
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Global supply chains are notoriously opaque, with critical information scattered across multiple systems, paper documents, and stakeholders. A single container shipment can involve 30+ parties and 200+ interactions, creating massive inefficiencies, delays, and fraud opportunities. Maersk and IBM identified blockchain as a transformative technology to create a single source of truth for global trade, reducing paperwork, delays, and costs while improving transparency and security.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Problem Statement
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+**How can we create a blockchain-based platform that provides real-time, tamper-proof visibility into global supply chains while maintaining data privacy and enabling seamless integration with existing enterprise systems?**
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The supply chain challenges include:
+- **Information silos**: Data fragmented across carriers, ports, customs, and logistics providers
+- **Paper-based processes**: Bill of lading, customs documents still largely paper-based
+- **Lack of visibility**: Shippers cannot track shipments in real-time
+- **Fraud and errors**: Document tampering and human errors cause delays and disputes
+- **Integration complexity**: Diverse enterprise systems make data sharing difficult
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## System Architecture
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+TradeLens creates an **open and neutral platform** for global trade built on Hyperledger Fabric:
 
-{% raw %}
+### Platform Components
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+1. **Event-Sourced Data Model**: Immutable records of all container events (loading, transit, customs, delivery)
+2. **Permissioned Blockchain Network**: Consortium blockchain with ports, carriers, customs, and logistics providers
+3. **API Integration Layer**: RESTful APIs for enterprise system integration
+4. **Smart Contract Automation**: Automated workflows for document exchange and compliance
+5. **Encrypted Data Channels**: Privacy-preserving data sharing between parties
 
-{% endraw %}
+### Key Innovation
+
+TradeLens was one of the **first large-scale enterprise blockchain deployments**, demonstrating blockchain's viability for global trade digitization at unprecedented scale.
+
+## Key Features
+
+- **Event-sourced supply chain visibility** across all actors, providing real-time tracking
+- **Chain-of-custody verification** for shipments, ensuring tamper-proof records
+- **Customs document exchange** with digital signatures, reducing paperwork by 80%+
+- **Pluggable enterprise integration** layers, enabling seamless connection with existing systems
+
+## Technologies
+
+- **Hyperledger Fabric**: Permissioned blockchain architecture for enterprise consortium
+- **Permissioned Blockchain Architecture**: Controlled access with privacy channels
+- **Container Event APIs**: Real-time event ingestion from ports and carriers
+- **Smart Contract Automation**: Automated document workflows and compliance checks
+- **Encrypted Data Channels**: Private data sharing between specific parties
+
+## My Role
+
+As **Blockchain Developer (Early-stage Prototyping)** at IBM Research Africa, I contributed to:
+
+- **Container event ingestion models**: Designed data models for capturing shipping events
+- **API wrappers**: Developed integration layers for logistics systems
+- **Simulation and verification**: Tested blockchain-backed shipment records for accuracy
+- **Visualization tools**: Prototyped dashboards for customs and logistics workflows
+- **Platform foundation**: Contributed to early architecture that scaled to 600+ ports globally
+- **Case study development**: Supported IBM case study demonstrating blockchain value in supply chains
+
+## Implementation Details
+
+The TradeLens platform was implemented through:
+
+### System Scale
+
+- **>100,000 container events** digitized and recorded on blockchain
+- **600+ ports** integrated with the platform
+- **Maersk, CMA CGM** and major carriers participating
+- **Global coverage**: Operations across major shipping routes
+
+## Outcomes
+
+- **Digitized >100,000 container events** with full traceability
+- **Integrated with Maersk, CMA CGM, and 600+ ports** worldwide
+- **Published case study** by IBM demonstrating blockchain value in supply chains
+- **Commercialized platform** (retired in 2022 after successful commercialization phase)
+
+## Impact
+
+TradeLens addressed fundamental challenges in global trade digitization:
+
+- **Supply chain digitization**: Demonstrated blockchain's value for global trade
+- **Blockchain for logistics**: Established patterns for logistics blockchain applications
+- **Trade facilitation**: Reduced paperwork and delays in international shipping
+- **Enterprise consortium networks**: Proved viability of multi-party blockchain platforms
+
+## Status
+
+**Completed** (2016-2018) - Commercialized (retired 2022). Global IBM cross-lab research with industry co-development. The platform's design patterns continue to influence supply chain blockchain initiatives.
+
+## Research Contributions
+
+This work pioneered:
+1. **Enterprise blockchain** deployment at global scale
+2. **Supply chain digitization** using blockchain
+3. **Consortium blockchain** governance models
+4. **Event-sourced** blockchain data models

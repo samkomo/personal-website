@@ -5,7 +5,16 @@
         <b>{{ content.name }}</b>
       </td>
       {% if content.value %}
-        <td class="p-1 pl-2 font-weight-light text">{{ content.value }}</td>
+        <td class="p-1 pl-2 font-weight-light text">
+          {% if content.link %}
+            <a href="{{ content.link }}" target="_blank" rel="noopener noreferrer" class="cv-link">{{ content.value }}</a>
+          {% else %}
+            <span class="cv-value">{{ content.value }}</span>
+          {% endif %}
+          {% if content.description %}
+            <span class="cv-description"> — {{ content.description }}</span>
+          {% endif %}
+        </td>
       {% endif %}
       {% if content.links %}
         <td class="p-1 pl-2 font-weight-light text">

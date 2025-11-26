@@ -2,96 +2,316 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Dr. Samuel Karumba
+    - name: Location
+      value: Sydney, Australia
     - name: Languages
-      value: English, German
+      value: English, Swahili
+    - name: Citizenship
+      value: Kenya
+    - name: Australian Visa Status
+      value: Temporary Graduate Visa (Subclass 485, Post-Higher Education Work stream) - Full Work Rights
+    - name: Email
+      value: karumba66@gmail.com
+      link: mailto:karumba66@gmail.com
+    - name: ORCID
+      value: 0000-0002-7181-9799
+      link: https://orcid.org/0000-0002-7181-9799
+    - name: Google Scholar
+      value: XL1vtsgAAAAJ
+      link: https://scholar.google.com/citations?user=XL1vtsgAAAAJ
+
+- title: Bio Statement
+  type: bio
+  contents:
+    - "Dr. Samuel Karumba is a researcher in distributed systems and ubiquitous computing, with a focus on secure protocols and privacy-preserving architectures. His work examines blockchain security, secure multiparty computation, and context-aware systems. He has contributed to national research programs through work at CSIRO and previously held roles with IBM and UNSW that centered on protocol design for data integrity and cross-system interoperability. His publications address federated learning, zero-knowledge proofs, blockchain consensus mechanisms, and context-aware computing in ubiquitous environments. He works across African and Australian research ecosystems on cryptographic protocols and privacy-preserving system design."
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Doctor of Philosophy (PhD) in Computer Science
+      institution: University of New South Wales (UNSW), Sydney, Australia
+      year: 2019 - 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Thesis: Blockchain-based Decentralized Energy Systems: Advancing Scalability, Security, Privacy, and Interoperability"
+        - "Advisors: Prof. Salil S. Kanhere (UNSW), Prof. Raja Jurdak (QUT), Dr. Subbu Sethuvenkatraman (CSIRO)"
+        - "Developed 4 blockchain frameworks (HARB, PlexiChain, CypherChain, BAILIF) adopted for energy security use cases"
+        - "Published 7 research papers linked to thesis chapters"
+        - "Influenced energy governance standards in Australia and globally"
+        - "Awarded UNSW Scientia Scholarship (Top 3% of PhD applicants)"
+        - "DOI: https://doi.org/10.26190/unsworks/28768"
+    - title: Master of Science (MSc) in Mobile Telecommunication and Innovation
+      institution: Strathmore University, Nairobi, Kenya
+      year: 2013 - 2017
       description:
-        - Description 1.
-        - Description 2.
+        - "Dissertation: Smart Education: An Event Framework for Cognitive Blended Learning"
+        - "Advisors: Dr. Joseph Sevilla, Dr. Vitalis Ozianyi"
+        - "GPA: 3.56 / 4.00"
+        - "Designed and piloted a cognitive learning companion prototype"
+        - "Awarded Safaricom Academy Scholarship (Top 25 applicants from Kenya)"
+    - title: Bachelor of Science (BSc) in Computer Science
+      institution: Moi University, Eldoret, Kenya
+      year: 2008 - 2012
+      description:
+        - Second Class Honours (Upper Division)
+        - Final year project on secure database synchronization in distributed networks
+        - "Core courses: Software Engineering, Distributed Systems, Database Systems, Computer Security and Cryptography, Algorithms and Data Structures, Artificial Intelligence"
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research & Innovation Consultant, Secure Decentralized Systems
+      institution: Secure Decentralized Systems
+      year: Jan 2025 – Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "Leading design and deployment of blockchain-based data integrity systems and verifiable AI infrastructures for fintech and energy startups across Africa and Australia"
+        - "Architecting Hyperledger Fabric networks supporting identity management, permissioned data exchange, and smart contract governance for compliance-aware applications"
+        - "Developing modular data pipelines integrating blockchain and analytics for AI explainability and traceability in distributed systems"
+        - "Conducting scalability, performance, and cryptographic audits for early-stage blockchain ventures, ensuring resilience and regulatory compliance"
+        - "Delivering DevOps pipelines for blockchain platforms, integrating containerized testing, monitoring, and CI/CD automation using Docker, Kubernetes, and GitHub Actions"
+    - title: Postdoctoral Research Engineer
+      institution: CSIRO Data61, Sydney, Australia
+      year: Dec 2023 – Dec 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - "Led engineering of cybersecurity and blockchain-based assurance frameworks within the CAESER program (Cybersecurity of Consumer Energy Resources)"
+        - "Designed permissioned blockchain prototypes for data provenance and device attestation across smart inverters and distributed energy systems"
+        - "Integrated AI-driven anomaly detection and risk classification models for grid-edge systems, improving incident detection precision by 30%"
+        - "Authored peer-reviewed publications translating research into operational frameworks adopted by Australian utilities and policy bodies"
+    - title: Postdoctoral Researcher
+      institution: University of New South Wales (UNSW), Sydney, Australia
+      year: 2023
       description:
+        - Researched blockchain for voluntary carbon markets
+        - Produced policy recommendations adopted by 3 carbon firms
+        - Co-designed selective disclosure protocol using zero-knowledge proofs
+        - Improved digital MRV architecture leading to 20% increase in process transparency
+    - title: Research Assistant
+      institution: University of New South Wales (UNSW), Sydney, Australia
+      year: 2022 - 2023
+      description:
+        - Researched blockchain for voluntary carbon markets
+        - Produced internal report on selective disclosure and traceability in carbon credit systems
+        - Collaborated with legal experts to align with international voluntary carbon market standards
+    - title: PhD Researcher
+      institution: CSIRO & UNSW, Newcastle & Sydney, Australia
+      year: 2019 - 2023
+      description:
+        - Developed cryptographic, scalable, and privacy-preserving blockchain solutions for decentralized energy systems
+        - Published 7 first-author research papers during PhD
+        - Prototyped and evaluated 4 novel blockchain frameworks addressing scalability, privacy, and interoperability
+        - Presented research at top-tier conferences including ICBC, ACM e-Energy, and ICTD
+        - Mentored multiple postgraduate students and contributed to research training workshops
+        - Developed simulation environments and metrics used by subsequent research teams
+    - title: Lecturer / Guest Instructor
+      institution: University of New South Wales (UNSW), Sydney, Australia
+      year: 2020 - 2023
+      description:
+        - Delivered guest lectures on blockchain scalability and privacy (COMP9321 - Data Services Engineering, Postgraduate)
+        - Provided lab supervision and tutorials on web application security (COMP6443 - Web Application Security, Undergraduate)
+        - Supervised 5 research thesis projects (Honours and Masters levels)
+        - "Topics: Privacy-preserving data sharing in smart grids, Secure IoT frameworks, Blockchain-based credential verification, Multi-chain identity authentication"
+        - "Outcomes: 3 students published papers in peer-reviewed venues, 2 students secured scholarships for postgraduate research"
+    - title: Research Software Engineer
+      institution: IBM Research Africa, Nairobi, Kenya
+      year: 2015 - 2019
+      description:
+        - Built blockchain-enabled mobile, IoT, and AI systems for agriculture, education, and logistics
+        - Co-invented and granted 3 US patents in blockchain and IoT systems
+        - Piloted Agri-Wallet impacting 2,000+ smallholder farmers
+        - Co-developed IBM cognitive learning companion and school analytics platform adopted by county education ministries
+        - Contributed to early prototyping of TradeLens, IBM's global shipping blockchain platform
+        - Delivered technical workshops and training to regional government and NGOs
+    - title: Research Intern
+      institution: IBM Research Africa, Nairobi, Kenya
+      year: 2014 - 2015
+      description:
+        - Contributed to Cognitive Learning Companion (CLC) project
+        - Designed iOS-based content delivery platform
+        - Instrumented mobile phones for multimodal sensor data collection and real-time behavioral feedback
+        - Co-developed cooperative download architecture for efficient offline content sharing in resource-constrained environments
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Research Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/samkomo">HARB</a> - Hypergraph-Based Adaptive Consortium Blockchain
+      year: 2019 - 2022
+      description:
+        - Framework for decentralized energy trading using hypergraph theory
+        - "Published in IEEE Internet of Things Journal (Impact Factor: 8.2, Q1)"
+        - Outperformed single-chain and PoA models in simulation
+    - title: <a href="https://github.com/samkomo">PlexiChain</a> - Secure Blockchain-Based Flexibility Aggregator
+      year: 2021 - 2022
+      description:
+        - Privacy-preserving framework integrating PUFs and NFTs for energy flexibility aggregation
+        - Published as arXiv preprint (arXiv:2212.09064)
+        - Formed security backbone for BAILIF cross-chain validation
+    - title: <a href="https://github.com/samkomo">CypherChain</a> - Privacy-Preserving Data Aggregation Framework
+      year: 2022 - 2024
+      description:
+        - Secure multiparty computation for blockchain-based demand response programs
+        - Published at IEEE ICBC 2024
+        - Maintains transactional transparency while preserving anonymity
+    - title: <a href="https://github.com/samkomo">BAILIF</a> - Blockchain Agnostic Interoperability Framework
+      year: 2022 - 2023
+      description:
+        - Cross-chain interoperability solution for energy systems
+        - Published at IEEE ICBC 2023
+        - Enables secure atomic swaps and cross-chain data exchange
+    - title: CAESER - Cybersecurity of Consumer Energy Resources
+      year: 2023 - Present
+      description:
+        - National cybersecurity project for Australian smart grids
+        - Event-driven resilience, machine learning, and policy-guided cyber defense
+        - Cross-institutional collaboration with CSIRO and UNSW
+    - title: CCDI - Carbon Certification & Development Initiative
+      year: 2022 - 2023
+      description:
+        - Blockchain-based framework for voluntary carbon credit verification
+        - 3 industrial pilot engagements across Southeast Asia
+        - Improved carbon credit traceability by 20%
+    - title: Agri-Wallet for Smallholder Farmers
+      year: 2018 - 2019
+      description:
+        - Blockchain-powered payment and booking system for mechanized agricultural services
+        - Impacted 2,000+ farmers in pilot
+        - Granted patent (US11497156B2)
+    - title: TradeLens Global Supply Chain Blockchain
+      year: 2016 - 2018
+      description:
+        - Enterprise blockchain platform for global supply chain digitization
+        - Digitized >100,000 container events, integrated with 600+ ports
+        - Contributed to early prototyping and development
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2018
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - UNSW Scientia PhD Scholarship (Top 3% of PhD applicants, ~900 applicants across disciplines)
+    - year: 2013
       items:
-        - Max Planck Medal
+        - Safaricom Academy Scholarship (Top 25 applicants from Kenya, ~200 applicants)
+    - year: 2023
+      items:
+        - ACE Summer School Travel Stipend (Monash University / ACE Program)
 
-- title: Academic Interests
+- title: Publications Summary
+  type: map_dynamic
+  contents:
+    - name: Journal Articles
+      value_dynamic: "site.bibliography | where: 'type', 'article' | size"
+      description: "(IEEE Internet of Things Journal, Journal of Network and Computer Applications, International Journal of Sustainable Energy, arXiv)"
+    - name: Conference Papers
+      value_dynamic: "site.bibliography | where: 'type', 'inproceedings' | size"
+      description: "(ACM e-Energy, IEEE ICBC, ACM MOBILESoft, IEEE ICSE-SEIS, ACM ICTD)"
+    - name: Book Chapters
+      value_dynamic: "site.bibliography | where: 'type', 'incollection' | size"
+      description: "(John Wiley & Sons)"
+    - name: Total Citations
+      value_dynamic: "site.data.scholar_metrics.citations.all"
+      link: https://scholar.google.com/citations?user=XL1vtsgAAAAJ
+    - name: h-index
+      value_dynamic: "site.data.scholar_metrics.h_index.all"
+      link: https://scholar.google.com/citations?user=XL1vtsgAAAAJ
+    - name: i10-index
+      value_dynamic: "site.data.scholar_metrics.i10_index.all"
+      link: https://scholar.google.com/citations?user=XL1vtsgAAAAJ
+    - name: Patents
+      value: "3 (Granted)"
+
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Distributed Systems
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Blockchain security and consensus mechanisms
+        - Cross-chain interoperability protocols
+        - Smart contract security
+        - Decentralized identity systems
+        - Hypergraph-based architectures
+    - title: Ubiquitous Computing
       items:
-        - Description 1.
-        - Description 2.
+        - Context-aware computing
+        - Mobile and embedded systems
+        - IoT integration and edge computing
+        - Pervasive system architectures
+    - title: Privacy-Preserving Computation
+      items:
+        - Secure multiparty computation
+        - Zero-knowledge proofs
+        - Federated learning in distributed environments
+        - Homomorphic encryption
+    - title: Cryptographic Protocols
+      items:
+        - Protocol design for data integrity
+        - Privacy-preserving system architectures
+        - Cryptographic system verification
 
-- title: Other Interests
-  type: list
+- title: Technical Skills
+  type: nested_list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Blockchain Technologies
+      items:
+        - "Hyperledger Fabric (Expert) - Chaincode development, network architecture, Fabric-CA identity management"
+        - "Ethereum & Solidity (Advanced) - Smart contract development, security analysis, Hardhat, OpenZeppelin"
+        - "Blockchain Interoperability (Expert) - Cross-chain atomic swaps, oracle integration, DID-based access control"
+        - "Consensus Mechanisms - Consortium blockchain design, performance benchmarking with Hyperledger Caliper"
+    - title: Programming Languages
+      items:
+        - "Go (Golang) - Expert - Chaincode development, microservices, gRPC integration"
+        - "Python - Advanced - Research prototyping, data analysis, MPC frameworks (MP-SPDZ)"
+        - "JavaScript/Node.js - Advanced - Mobile wallet integration, USSD gateways, REST APIs"
+        - "Solidity - Advanced - Smart contract security, Hardhat, MythX, formal verification"
+        - "Mobile Development - Android SDK, iOS, Bluetooth Low Energy (BLE), USSD/SMS integration"
+    - title: Cryptography & Security
+      items:
+        - "Secure Multiparty Computation (SMPC) - Expert - MP-SPDZ, threshold decryption, private set operations"
+        - "Zero-Knowledge Proofs - Expert - zk-SNARKs, Bulletproofs, R1CS, selective disclosure protocols"
+        - "Homomorphic Encryption - Advanced - Paillier cryptosystem, encrypted computation on blockchain"
+        - "Physical Unclonable Functions (PUFs) - Advanced - Hardware-anchored device identity, IoT security"
+        - "Post-Quantum Cryptography - Applied in CAESER project for future-proof security"
+    - title: DevOps & Infrastructure
+      items:
+        - "Container Orchestration - Docker, Kubernetes, Helm charts, Docker Swarm"
+        - "CI/CD Pipelines - Jenkins, GitHub Actions, automated deployment for blockchain networks"
+        - "Monitoring & Observability - Prometheus, Grafana, performance dashboards, resource profiling"
+        - "Cloud Platforms - IBM Cloud, AWS IoT Core, Infura (Ethereum RPC)"
+        - "Microservices Architecture - Service mesh, API gateways, distributed systems design"
+    - title: IoT & Edge Computing
+      items:
+        - "IoT-Blockchain Integration - MQTT, sensor data anchoring, Raspberry Pi, edge gateways"
+        - "Mobile & Embedded Systems - Android SDK, BLE, GSM/GPRS modules, offline-first design"
+        - "Sensor Fusion - Multimodal data collection, real-time behavioral analytics"
+    - title: Research & Analysis Tools
+      items:
+        - "Blockchain Performance Benchmarking - Hyperledger Caliper, TPS analysis, latency profiling"
+        - "Smart Contract Security Analysis - MythX, Manticore, Slither, Oyente, formal verification"
+        - "Cryptographic Libraries - MP-SPDZ, HElib, ZKP libraries, Paillier implementations"
+
+- title: References
+  type: time_table
+  contents:
+    - title: Prof. Salil S. Kanhere
+      institution: "Professor, School of Computer Science and Engineering, UNSW, Australia"
+      description:
+        - "Relation: Primary PhD supervisor (2019-2024)"
+        - "Research Areas: IoT, Blockchain, Cyber-Physical Systems, Cybersecurity, Applied ML"
+        - "Contact: Available upon request"
+    - title: Prof. Raja Jurdak
+      institution: "Professor, Director of Trusted Networks Lab, Queensland University of Technology (QUT), Australia"
+      description:
+        - "Relation: PhD co-supervisor (2019-2024)"
+        - "Research Areas: IoT, Blockchain, Distributed Systems, Energy Systems"
+        - "Contact: Available upon request"
+    - title: Dr. Charity Wayua
+      institution: "Director, IBM Research Africa"
+      description:
+        - "Relation: Research manager at IBM Research Africa (2017-2019)"
+        - "Research Areas: Human-Computer Interaction, Digital Inclusion, ICT4D"
+        - "Contact: Available upon request"
+    - title: Dr. Sid Chi-Kin Chau
+      institution: "Principal Research Scientist, CSIRO Data61, Australia"
+      description:
+        - "Relation: Research manager at CSIRO Data61 (2023-2024)"
+        - "Research Areas: Cybersecurity for Energy Systems, Blockchain, IoT Security"
+        - "Contact: Available upon request"

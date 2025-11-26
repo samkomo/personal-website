@@ -1,0 +1,684 @@
+---
+layout: default
+---
+{% assign project_data = site.data.projects | where: "slug", page.slug | first %}
+{% if project_data == nil %}
+  {% assign project_data = site.data.projects | where: "title", page.title | first %}
+{% endif %}
+
+{% if page._styles %}
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="project-detail-page">
+  <!-- Hero Section -->
+  <div class="project-hero">
+    {% if page.img or project_data.img %}
+      <div class="project-hero-image">
+        {% assign hero_img = page.img | default: project_data.img %}
+        {% include figure.liquid
+          loading="eager"
+          path=hero_img
+          sizes="100vw"
+          alt=page.title
+          class="hero-img"
+        %}
+        <div class="hero-overlay"></div>
+      </div>
+    {% endif %}
+    <div class="project-hero-content">
+      <div class="container">
+        <a href="{{ '/projects/' | relative_url }}" class="back-link">
+          <i class="fa-solid fa-arrow-left"></i> Back to Projects
+        </a>
+        <div class="project-header">
+          <div class="project-badges">
+            {% if page.category or project_data.category %}
+              <span class="project-category-badge">{{ page.category | default: project_data.category | capitalize }}</span>
+            {% endif %}
+            {% if project_data.status %}
+              <span class="project-status-badge status-{{ project_data.status | downcase }}">{{ project_data.status }}</span>
+            {% endif %}
+          </div>
+          <h1 class="project-title">{{ page.title }}</h1>
+          <p class="project-subtitle">{{ page.description | default: project_data.description }}</p>
+          <div class="project-meta-header">
+            {% if project_data.period %}
+              <span class="meta-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>{{ project_data.period }}</span>
+              </span>
+            {% endif %}
+            {% if project_data.patent %}
+              <span class="meta-item">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Patent: {{ project_data.patent }}</span>
+              </span>
+            {% endif %}
+            {% if page.related_publications or project_data.related_publications %}
+              <span class="meta-item">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Published</span>
+              </span>
+            {% endif %}
+            {% if project_data.github %}
+              <a href="{{ project_data.github }}" target="_blank" class="meta-item meta-link">
+                <i class="fa-brands fa-github"></i>
+                <span>View Code</span>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container project-content-wrapper">
+    <div class="row">
+      <!-- Main Content Column -->
+      <div class="col-lg-8">
+        <article class="project-article">
+          {{ content }}
+        </article>
+
+        {% if page.related_publications or project_data.related_publications %}
+          <section class="project-publications">
+            <h2 class="section-title">
+              <i class="fa-solid fa-book"></i>
+              Related Publications
+            </h2>
+            <div class="publications">
+              {% bibliography --cited_in_order %}
+            </div>
+          </section>
+        {% endif %}
+      </div>
+
+      <!-- Sidebar Column -->
+      <div class="col-lg-4">
+        <aside class="project-sidebar">
+          <!-- My Role Section -->
+          {% assign role_section = content | split: '## My Role' | last | split: '##' | first %}
+          {% if role_section != content %}
+            <div class="sidebar-section my-role-section">
+              <h3 class="sidebar-title">
+                <i class="fa-solid fa-user-tie"></i>
+                My Role
+              </h3>
+              <div class="role-content">
+                {% assign role_items = role_section | split: '-' %}
+                {% if role_items.size > 1 %}
+                  <ul class="role-list">
+                    {% for item in role_items offset: 1 %}
+                      {% assign clean_item = item | strip | remove: '**' %}
+                      {% if clean_item != '' and clean_item.size > 10 %}
+                        <li>{{ clean_item | strip | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <p>{{ role_section | strip | remove: '## My Role' | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+
+          <!-- Quick Info -->
+          <div class="sidebar-section">
+            <h3 class="sidebar-title">
+              <i class="fa-solid fa-info-circle"></i>
+              Quick Info
+            </h3>
+            <dl class="info-list">
+              {% if project_data.period %}
+                <dt><i class="fa-solid fa-calendar"></i> Period</dt>
+                <dd>{{ project_data.period }}</dd>
+              {% endif %}
+              {% if project_data.status %}
+                <dt><i class="fa-solid fa-circle-check"></i> Status</dt>
+                <dd>{{ project_data.status }}</dd>
+              {% endif %}
+              {% if project_data.category %}
+                <dt><i class="fa-solid fa-tag"></i> Category</dt>
+                <dd>{{ project_data.category | capitalize }}</dd>
+              {% endif %}
+              {% if project_data.patent %}
+                <dt><i class="fa-solid fa-certificate"></i> Patent</dt>
+                <dd>{{ project_data.patent }}</dd>
+              {% endif %}
+              {% if page.related_publications or project_data.related_publications %}
+                <dt><i class="fa-solid fa-file-lines"></i> Publications</dt>
+                <dd>Available</dd>
+              {% endif %}
+            </dl>
+          </div>
+
+          <!-- Table of Contents -->
+          <div class="sidebar-section toc-section">
+            <h3 class="sidebar-title">
+              <i class="fa-solid fa-list"></i>
+              Contents
+            </h3>
+            <nav class="toc-nav" id="project-toc">
+              <!-- Will be populated by JavaScript or Liquid -->
+            </nav>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.project-detail-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.project-hero {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.project-hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+  z-index: 1;
+}
+
+.project-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 3rem 0;
+  color: white;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+}
+
+.back-link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-4px);
+}
+
+.project-header {
+  max-width: 900px;
+}
+
+.project-badges {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-category-badge,
+.project-status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+}
+
+.project-category-badge {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-status-badge {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-status-badge.status-active {
+  background: rgba(76, 175, 80, 0.8);
+  border-color: rgba(76, 175, 80, 0.9);
+}
+
+.project-status-badge.status-completed {
+  background: rgba(33, 150, 243, 0.8);
+  border-color: rgba(33, 150, 243, 0.9);
+}
+
+.project-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.project-subtitle {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 400;
+}
+
+.project-meta-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+}
+
+.meta-item i {
+  color: var(--global-theme-color);
+  font-size: 1rem;
+}
+
+.meta-link {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.meta-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Content Wrapper */
+.project-content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.project-article {
+  line-height: 1.8;
+  color: var(--global-text-color);
+}
+
+.project-article > *:first-child {
+  margin-top: 0;
+}
+
+/* Sidebar */
+.project-sidebar {
+  position: sticky;
+  top: 100px;
+  padding-left: 2rem;
+}
+
+.sidebar-section {
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-role-section {
+  background: linear-gradient(135deg, var(--global-theme-color) 0%, rgba(var(--global-theme-color-rgb), 0.8) 100%);
+  border-color: var(--global-theme-color);
+  color: white;
+}
+
+.my-role-section .sidebar-title {
+  color: white;
+}
+
+.my-role-section .sidebar-title i {
+  color: white;
+}
+
+.sidebar-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--global-text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar-title i {
+  color: var(--global-theme-color);
+  font-size: 1rem;
+}
+
+.role-content {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.role-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.role-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.role-list li:last-child {
+  border-bottom: none;
+}
+
+.role-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+}
+
+
+.info-list {
+  margin: 0;
+  padding: 0;
+}
+
+.info-list dt {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-list dt:first-child {
+  margin-top: 0;
+}
+
+.info-list dt i {
+  color: var(--global-theme-color);
+  font-size: 0.9rem;
+}
+
+.info-list dd {
+  margin: 0 0 0 1.75rem;
+  color: var(--global-text-color);
+  font-size: 0.95rem;
+}
+
+.toc-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-nav a {
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--global-text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+  padding-left: 0.75rem;
+}
+
+.toc-nav a:hover {
+  color: var(--global-theme-color);
+  border-left-color: var(--global-theme-color);
+  padding-left: 1rem;
+}
+
+/* Article Styling */
+.project-article h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--global-text-color);
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--global-divider-color);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  scroll-margin-top: 120px;
+}
+
+.project-article h2:first-of-type {
+  margin-top: 0;
+}
+
+.project-article h2 i {
+  color: var(--global-theme-color);
+  font-size: 1.5rem;
+}
+
+/* Highlight My Role section in article */
+.project-article h2:contains("My Role") {
+  background: linear-gradient(135deg, rgba(var(--global-theme-color-rgb), 0.1) 0%, rgba(var(--global-theme-color-rgb), 0.05) 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--global-theme-color);
+}
+
+.project-article h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--global-text-color);
+}
+
+.project-article p {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  color: var(--global-text-color);
+  line-height: 1.8;
+}
+
+.project-article ul,
+.project-article ol {
+  margin: 1.5rem 0;
+}
+
+.project-article ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-article ul li {
+  background: var(--global-card-bg-color);
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.project-article ul li:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-article ol {
+  padding-left: 2rem;
+}
+
+.project-article ol li {
+  margin: 0.75rem 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--global-text-color);
+}
+
+.project-article li strong {
+  color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+.project-article blockquote {
+  border-left: 4px solid var(--global-theme-color);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: var(--global-text-color-light);
+  background: var(--global-card-bg-color);
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+/* Publications Section */
+.project-publications {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 2px solid var(--global-divider-color);
+}
+
+.project-publications .section-title {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .project-sidebar {
+    position: static;
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-hero {
+    min-height: 300px;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .project-meta-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .project-article h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-article h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-article p,
+  .project-article li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-hero-content {
+    padding: 2rem 0;
+  }
+
+  .project-title {
+    font-size: 1.75rem;
+  }
+
+  .project-subtitle {
+    font-size: 1rem;
+  }
+
+  .back-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+</style>
+
+<script>
+// Generate table of contents from h2 headings
+document.addEventListener('DOMContentLoaded', function() {
+  const tocNav = document.getElementById('project-toc');
+  if (!tocNav) return;
+  
+  const headings = document.querySelectorAll('.project-article h2');
+  if (headings.length === 0) {
+    tocNav.parentElement.style.display = 'none';
+    return;
+  }
+  
+  headings.forEach((heading, index) => {
+    const id = 'section-' + index;
+    heading.id = id;
+    
+    const link = document.createElement('a');
+    link.href = '#' + id;
+    link.textContent = heading.textContent.replace(/^\d+\.\s*/, '').trim();
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    
+    tocNav.appendChild(link);
+  });
+});
+</script>

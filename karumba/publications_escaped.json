@@ -1,0 +1,26 @@
+{
+  "publications": {
+    "journals": [
+      {
+        "title": "Temporary Immutability: A Removable Blockchain Solution for Prosumer-Side Energy Trading",
+        "abstract": "Recently, blockchain adoption in prosumer-side energy trading has been actively studied. However, most of the conventional frameworks permanently store all transactions which increases blockchain management cost and reduces the user privacy. Additionally, most of the existing solutions focus on facilitating energy trading and negotiation, while ignoring two critical issues: data acquisition and contract execution. The former refers to the process of collecting power generation/consumption information from on-site energy resources which is required to scale. The latter refers to the process of adjusting controllable loads’ operation in real-time. In this paper, we propose a removable blockchain architecture that introduces a Temporary Chain (TC) where transactions can be stored for a particular period of time. The architecture enables an energy manager node to effectively collect data for facilitating real-time load control. TC reduces the volume of transactions stored in blockchain which increases scalability, throughput, and privacy of the users and reduces latency. We present two approaches to implement TC which are: i) blackboard where a central authority stores temporary transactions, and ii) removable ledger. We introduce a lightweight mode to transfer data. The implementation results show that the proposed framework reduces blockchain storage size and delay and increases throughput.",
+        "venue": "Journal of Network and Computer Applications",
+        "year": 2021,
+        "impact_factor": 7.7,
+        "ranking": "Q1 (Computer Networks)",
+        "citations": 32,
+        "doi": "10.1016/j.jnca.2021.103018"
+      },
+      {
+        "title": "HARB: A Hypergraph-Based Adaptive Consortium Blockchain for Decentralised Energy Trading",
+        "abstract": "The emergence of the Internet of Things (IoT) and distributed energy resources (DERs), has given rise to collaborative communities that manage their energy production and consumption load through peer-to-peer decentralized energy trading (P2P DET). To address the issue of distributed trust in these communities, blockchain technology is widely considered as a promising solution due to its ability to provide records provenance and visibility. However, the current blockchain-based platforms are known to compromise on scalability and privacy in favor of trustless interactions and often do not support interoperability. In this work, we propose a hypergraph-based adaptive consortium blockchain (HARB) framework, which coordinates DERs through high-order relationships rather than P2P pairwise relationships. HARB is presented in a three-layered network architecture to address the aforementioned challenges. The bottom layer (Underlay) addresses the issue of scalability, by exploiting the rich representation ability of hypergraphs to describe complex relationships among DERs and end users. We use the described complex relations to form scalable network clusters with intra- and inter-community energy trading relationships. The middle layer (Overlay) presents a blockchain service model to describe adaptive blockchain modules that support interoperability between the network clusters. To preserve privacy, we present a data tagging and anonymization model in the top layer (Contract), which attributes transactions to specific network clusters. To evaluate our framework, we modeled various IoT devices with different computing resource profiles to simulate a distributed energy trading (DET) environment. The analyzed results have shown that our proposed framework can effectively improve the performance of blockchain-based DET systems.",
+        "venue": "IEEE Internet of Things Journal",
+        "year": 2020,
+        "impact_factor": 8.2,
+        "ranking": "Q1 (Computer Networks)",
+        "citations": 32,
+        "doi": "10.1109/JIOT.2020.3022045"
+      }
+    ]
+  }
+}

@@ -37,12 +37,20 @@ layout: default
                 {% include cv/list.liquid %}
               {% elsif entry.type == 'map' %}
                 {% include cv/map.liquid %}
+              {% elsif entry.type == 'map_dynamic' %}
+                {% if entry.title == 'Publications Summary' %}
+                  {% include cv/publications_summary.liquid %}
+                {% else %}
+                  {% include cv/map_dynamic.liquid %}
+                {% endif %}
               {% elsif entry.type == 'nested_list' %}
                 {% include cv/nested_list.liquid %}
               {% elsif entry.type == 'time_table' %}
                 {% include cv/time_table.liquid %}
               {% elsif entry.type == 'list_groups' %}
                 {% include cv/list_groups.liquid %}
+              {% elsif entry.type == 'bio' %}
+                {% include cv/bio.liquid %}
               {% else %}
                 {{ entry.contents }}
               {% endif %}

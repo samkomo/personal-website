@@ -1,0 +1,147 @@
+{
+    "journals": [
+        {
+            "title": "Temporary Immutability: A Removable Blockchain Solution for Prosumer-Side Energy Trading",
+            "venue": "Journal of Network and Computer Applications",
+            "year": 2021,
+            "impact_factor": 7.7,
+            "ranking": "Q1 (Computer Networks)",
+            "citations": 28,
+            "doi": "10.1016/j.jnca.2021.103018"
+        },
+        {
+            "title": "HARB: A Hypergraph-Based Adaptive Consortium Blockchain for Decentralised Energy Trading",
+            "venue": "IEEE Internet of Things Journal",
+            "year": 2022,
+            "impact_factor": 8.2,
+            "ranking": "Q1 (Computer Networks)",
+            "citations": 32,
+            "doi": "10.1109/JIOT.2020.3022045"
+        },
+        {
+            "title": "Barriers to Blockchain-Based Decentralised Energy Trading: A Systematic Review",
+            "venue": "International Journal of Sustainable Energy",
+            "year": 2023,
+            "impact_factor": 3.5,
+            "ranking": "Q2 (Energy)",
+            "citations": null,
+            "doi": "10.1080/14786451.2023.2171417"
+        },
+        {
+            "title": "PlexiChain: A Secure Blockchain-Based Flexibility Aggregator Framework",
+            "venue": "arXiv (Preprint)",
+            "year": 2022,
+            "impact_factor": null,
+            "ranking": null,
+            "citations": 1,
+            "doi": "arXiv:2212.09064"
+        }
+    ],
+    "conferences": [
+        {
+            "title": "EnergiPay: Off-chain Payment Channel for Blockchain-enabled Peer-to-peer Energy Trading",
+            "venue": "ACM e-Energy 2024",
+            "year": 2024,
+            "pages": "625-632",
+            "doi": "10.1145/3632775.3661985"
+        },
+        {
+            "title": "Systematic Study of Cybersecurity Threats for Smart Inverters",
+            "venue": "ACM e-Energy 2024",
+            "year": 2024,
+            "pages": "669-675",
+            "doi": "10.1145/3632775.3661994"
+        },
+        {
+            "title": "CypherChain: A Privacy-Preserving Data Aggregation Framework for Blockchain-Based DR Programs",
+            "venue": "IEEE ICBC 2024",
+            "year": 2024,
+            "pages": "362-364",
+            "doi": "10.1109/ICBC56567.2024.10174968"
+        },
+        {
+            "title": "BAILIF: A Blockchain Agnostic Interoperability Framework",
+            "venue": "IEEE ICBC 2023",
+            "year": 2023,
+            "pages": "1-9",
+            "doi": "10.1109/ICBC56567.2023.10174967"
+        },
+        {
+            "title": "Deploying Large Scale School Census Hub: An Experience Report",
+            "venue": "IEEE ICSE-SEIS 2017",
+            "year": 2017,
+            "pages": "47-56",
+            "doi": "10.1109/ICSE-SEIS.2017.7"
+        },
+        {
+            "title": "Towards Cooperative Content Downloading for Resource-Constrained Mobile Devices",
+            "venue": "ACM MOBILESoft 2016",
+            "year": 2016,
+            "pages": "189-198",
+            "doi": "10.1145/2897073.2897083"
+        },
+        {
+            "title": "A Relational Network Framework for Interoperability in Distributed Energy Trading",
+            "venue": "IEEE ICBC 2020",
+            "year": 2020,
+            "pages": "1-3",
+            "doi": null
+        },
+        {
+            "title": "Towards Blockchain-Enabled School Information Hub",
+            "venue": "ACM ICTD 2017",
+            "year": 2017,
+            "pages": "1-4",
+            "doi": null
+        }
+    ],
+    "book_chapters": [
+        {
+            "title": "Utilizing Blockchain as a Citizen-Utility for Future Smart Grids",
+            "book": "Wireless Blockchain: Principles, Technologies, and Applications",
+            "publisher": "John Wiley & Sons",
+            "year": 2021,
+            "pages": "201-224",
+            "doi": "10.1002/9781119790839.ch9"
+        }
+    ],
+    "patents": [
+        {
+            "title": "Farm Cultivation Quality",
+            "inventors": [
+                "J. Mutahi",
+                "D.W. Kaguma",
+                "S.M. Karumba",
+                "et al."
+            ],
+            "patent_number": "US11497156B2",
+            "filing_date": "2018-12-17",
+            "grant_date": "2022-11-01",
+            "link": "https://patents.google.com/patent/US11497156B2/en"
+        },
+        {
+            "title": "Cooperative Download among Low-End Devices Under Resource-Constrained Environment",
+            "inventors": [
+                "D.W. Kaguma",
+                "S. Karumba",
+                "K. Weldemariam"
+            ],
+            "patent_number": "US9961139B2",
+            "filing_date": "2015-01-13",
+            "grant_date": "2018-05-01",
+            "link": "https://patents.google.com/patent/US9961139B2/en"
+        },
+        {
+            "title": "Tracking Items Used for Providing Medical Services",
+            "inventors": [
+                "S.M. Karumba",
+                "C.A. Pickover",
+                "K. Weldemariam"
+            ],
+            "patent_number": "US20180189449A1",
+            "filing_date": null,
+            "grant_date": "2018-07-01",
+            "link": "https://patents.google.com/patent/US20180189449A1/en"
+        }
+    ]
+}
