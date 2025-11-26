@@ -81,7 +81,11 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.2"
-          bundler-cache: true
+          bundler-cache: false
+      - name: Install gems 💎
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
