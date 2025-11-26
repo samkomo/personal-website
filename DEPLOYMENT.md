@@ -12,14 +12,17 @@ The site automatically deploys when you push to the `main` branch. The deploymen
 
 ## 📋 Pre-Deployment Checklist
 
-- [x] ✅ URL updated in `_config.yml`: `https://samkomo.github.io`
-- [x] ✅ Base URL configured: `/personal-website`
+- [x] ✅ URL updated in `_config.yml` (e.g., `https://samkomo.github.io`)
+- [x] ✅ Base URL configured for your Pages type:
+  - `""` for user/organization pages or custom domains
+  - `"/personal-website"` for repository pages
 - [x] ✅ GitHub Actions workflow configured
 - [x] ✅ All changes committed and pushed
 
 ## 🔧 GitHub Pages Setup
 
 1. **Enable GitHub Pages:**
+
    - Go to your repository: `https://github.com/samkomo/personal-website`
    - Navigate to **Settings** → **Pages**
    - Under **Source**, select **GitHub Actions**
@@ -34,6 +37,7 @@ The site automatically deploys when you push to the `main` branch. The deploymen
 If you want to use a custom domain (e.g., `samuelkarumba.com`):
 
 1. **Add CNAME file:**
+
    ```bash
    echo "yourdomain.com" > CNAME
    git add CNAME
@@ -42,13 +46,14 @@ If you want to use a custom domain (e.g., `samuelkarumba.com`):
    ```
 
 2. **Update DNS:**
+
    - Add a CNAME record pointing to `samkomo.github.io`
    - Or add A records for GitHub Pages IPs
 
 3. **Update `_config.yml`:**
    ```yaml
    url: https://yourdomain.com
-   baseurl: ""  # Empty for root domain
+   baseurl: "" # Empty for root domain (set to "/personal-website" for repository pages)
    ```
 
 ## 🔍 Manual Deployment
@@ -81,4 +86,3 @@ The built site will be in the `_site` directory.
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [Jekyll Documentation](https://jekyllrb.com/docs/)
 - [al-folio Theme](https://github.com/alshedivat/al-folio)
-

@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Book chapter published in "Wireless Blockchain: Principles, Technologies, and Applications" (John Wiley & Sons): "Utilizing Blockchain as a Citizen-Utility for Future Smart Grids" 📚
-

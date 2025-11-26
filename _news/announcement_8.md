@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Preprint published on arXiv: "PlexiChain: A Secure Blockchain-based Flexibility Aggregator Framework" (arXiv:2212.09064) 📄
-
