@@ -92,19 +92,14 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.2"
-          bundler-cache: false
-      - name: Refresh lockfile platforms and native gems 🔄
+          bundler-cache: true
+        env:
+          BUNDLE_FORCE_RUBY_PLATFORM: "true"
+      - name: Configure Bundler for Linux builds 📦
         env:
           BUNDLE_FORCE_RUBY_PLATFORM: "true"
         run: |
-          bundle lock --add-platform x86_64-linux
-          bundle lock --update ffi nokogiri --conservative
-      - name: Install Ruby gems 📦
-        env:
-          BUNDLE_FORCE_RUBY_PLATFORM: "true"
-        run: |
-          bundle config set path vendor/bundle
-          bundle install --jobs 4 --retry 3
+          bundle config set force_ruby_platform true
       - name: Setup Node.js 📦
         uses: actions/setup-node@v4
         with:
