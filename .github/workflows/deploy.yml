@@ -76,12 +76,17 @@ jobs:
       - name: Install system dependencies 🔧
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev imagemagick
+          sudo apt-get install -y build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev imagemagick nodejs npm
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
-          bundler-cache: true
+          bundler-cache: false
+      - name: Install Bundler and Gems 💎
+        run: |
+          gem install bundler --no-document
+          bundle config set --local path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
