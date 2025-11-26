@@ -52,8 +52,6 @@ GEM
     feedjira (3.2.1)
       loofah (>= 2.3.1)
       sax-machine (>= 1.0)
-    ffi (1.17.2-aarch64-linux)
-    ffi (1.17.2-arm-linux)
     ffi (1.17.2-arm64-darwin)
     ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux)
@@ -146,15 +144,9 @@ GEM
       nokogiri (>= 1.12.0)
     matrix (0.4.3)
     mercenary (0.4.0)
-    mini_portile2 (2.8.9)
     minitest (5.25.4)
     namae (1.2.0)
       racc (~> 1.7)
-    nokogiri (1.13.10)
-      mini_portile2 (~> 2.8.0)
-      racc (~> 1.4)
-    nokogiri (1.13.10-aarch64-linux)
-      racc (~> 1.4)
     nokogiri (1.13.10-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.13.10-x86_64-darwin)
@@ -189,17 +181,8 @@ GEM
     zeitwerk (2.6.18)
 
 PLATFORMS
-  aarch64-linux
-  aarch64-linux
-  aarch64-linux
-  arm-linux
-  arm-linux
-  arm-linux
-  arm-linux
   arm64-darwin
   x86_64-darwin
-  x86_64-linux
-  x86_64-linux
   x86_64-linux
 
 DEPENDENCIES
