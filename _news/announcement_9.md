@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Patent granted: US11497156B2 - Farm Cultivation Quality 🎉
-

@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Graduation ceremony at UNSW! 🎓
-

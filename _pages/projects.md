@@ -12,10 +12,11 @@ nav_order: 3
     <p class="lead">Research projects organized into <strong>frameworks</strong> and <strong>systems</strong>. Frameworks focus on novel architectures and protocols, while systems represent deployed applications and platforms.</p>
   </div>
 
-  {% assign systems = site.data.projects | where: "category", "systems" | sort: "importance" %}
-  {% assign frameworks = site.data.projects | where: "category", "frameworks" | sort: "importance" %}
+{% assign systems = site.data.projects | where: "category", "systems" | sort: "importance" %}
+{% assign frameworks = site.data.projects | where: "category", "frameworks" | sort: "importance" %}
 
-  {% if systems.size > 0 %}
+{% if systems.size > 0 %}
+
   <section class="projects-section">
     <div class="section-header">
       <h2 class="section-title">
@@ -32,7 +33,8 @@ nav_order: 3
   </section>
   {% endif %}
 
-  {% if frameworks.size > 0 %}
+{% if frameworks.size > 0 %}
+
   <section class="projects-section">
     <div class="section-header">
       <h2 class="section-title">

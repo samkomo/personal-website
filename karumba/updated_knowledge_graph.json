@@ -8,43 +8,25 @@
           {
             "context": "CypherChain",
             "description": "Designed privacy-preserving energy data aggregation using SMPC and HE.",
-            "technologies": [
-              "Secure Multiparty Computation",
-              "Homomorphic Encryption",
-              "ZKP",
-              "Hypergraph Partitioning"
-            ],
-            "methods": [
-              "Encrypted aggregation",
-              "Multi-party negotiation",
-              "Inference resistance"
-            ]
+            "technologies": ["Secure Multiparty Computation", "Homomorphic Encryption", "ZKP", "Hypergraph Partitioning"],
+            "methods": ["Encrypted aggregation", "Multi-party negotiation", "Inference resistance"]
           }
         ],
         "evolution": [
           {
             "period": "2019\u20132020",
             "phase": "Foundational Design",
-            "tools": [
-              "Python",
-              "PySyft"
-            ],
+            "tools": ["Python", "PySyft"],
             "note": "Explored SMPC models in simulations."
           },
           {
             "period": "2021\u20132023",
             "phase": "Blockchain Integration",
-            "tools": [
-              "HElib",
-              "Charm"
-            ],
+            "tools": ["HElib", "Charm"],
             "note": "Deployed privacy layers within CypherChain."
           }
         ],
-        "signature_outcomes": [
-          "Maintained DR offer privacy in blockchain networks",
-          "Presented at IEEE ICBC 2024"
-        ]
+        "signature_outcomes": ["Maintained DR offer privacy in blockchain networks", "Presented at IEEE ICBC 2024"]
       },
       {
         "name": "Cryptographic Framework Design",
@@ -53,42 +35,25 @@
           {
             "context": "PlexiChain, BAILIF",
             "description": "Built layered security protocols with cryptographic anchors for decentralized systems.",
-            "technologies": [
-              "ZKP",
-              "PUFs",
-              "DID",
-              "PQC"
-            ],
-            "methods": [
-              "Formal modeling",
-              "Threat-based protocol synthesis"
-            ]
+            "technologies": ["ZKP", "PUFs", "DID", "PQC"],
+            "methods": ["Formal modeling", "Threat-based protocol synthesis"]
           }
         ],
         "evolution": [
           {
             "period": "2020",
             "phase": "Conceptual Modeling",
-            "tools": [
-              "LaTeX",
-              "VeriFast"
-            ],
+            "tools": ["LaTeX", "VeriFast"],
             "note": "Built threat-aligned security assumptions."
           },
           {
             "period": "2022\u20132023",
             "phase": "Protocol Engineering",
-            "tools": [
-              "Solidity",
-              "Certora"
-            ],
+            "tools": ["Solidity", "Certora"],
             "note": "Deployed and validated security primitives."
           }
         ],
-        "signature_outcomes": [
-          "Enabled secure cross-chain validation",
-          "Cited in blockchain governance literature"
-        ]
+        "signature_outcomes": ["Enabled secure cross-chain validation", "Cited in blockchain governance literature"]
       }
     ],
     "Engineering": [
@@ -99,45 +64,25 @@
           {
             "context": "PlexiChain",
             "description": "Hardened smart contracts against known energy sector vulnerabilities.",
-            "technologies": [
-              "Solidity",
-              "Slither",
-              "MythX",
-              "Echidna",
-              "Certora"
-            ],
-            "methods": [
-              "Static analysis",
-              "Symbolic execution",
-              "Formal verification"
-            ]
+            "technologies": ["Solidity", "Slither", "MythX", "Echidna", "Certora"],
+            "methods": ["Static analysis", "Symbolic execution", "Formal verification"]
           }
         ],
         "evolution": [
           {
             "period": "2020",
             "phase": "Initial Testing",
-            "tools": [
-              "Truffle",
-              "Ganache"
-            ],
+            "tools": ["Truffle", "Ganache"],
             "note": "Simulated attack vectors on test networks."
           },
           {
             "period": "2022\u20132024",
             "phase": "Advanced Verification",
-            "tools": [
-              "Certora",
-              "Z3",
-              "Echidna"
-            ],
+            "tools": ["Certora", "Z3", "Echidna"],
             "note": "Achieved zero high-severity vulnerabilities."
           }
         ],
-        "signature_outcomes": [
-          "Enhanced system resilience",
-          "Reduced exploit surface in token logic"
-        ]
+        "signature_outcomes": ["Enhanced system resilience", "Reduced exploit surface in token logic"]
       },
       {
         "name": "System Design for Decentralized Applications",
@@ -146,42 +91,25 @@
           {
             "context": "BAILIF, CCDI",
             "description": "Architected decentralized identity and transaction bridges across sectors.",
-            "technologies": [
-              "Ethereum",
-              "Hyperledger",
-              "Oracles",
-              "Smart Contracts"
-            ],
-            "methods": [
-              "Modular design",
-              "Cross-chain messaging"
-            ]
+            "technologies": ["Ethereum", "Hyperledger", "Oracles", "Smart Contracts"],
+            "methods": ["Modular design", "Cross-chain messaging"]
           }
         ],
         "evolution": [
           {
             "period": "2018",
             "phase": "API-Focused Integrations",
-            "tools": [
-              "Node.js",
-              "Web3.js"
-            ],
+            "tools": ["Node.js", "Web3.js"],
             "note": "Integrated on-chain and off-chain data flows."
           },
           {
             "period": "2020\u20132023",
             "phase": "Composable Blockchain Architectures",
-            "tools": [
-              "Solidity",
-              "Chainlink"
-            ],
+            "tools": ["Solidity", "Chainlink"],
             "note": "Enabled asset traceability and selective disclosure."
           }
         ],
-        "signature_outcomes": [
-          "Increased cross-platform operability",
-          "Informed national policy recommendations"
-        ]
+        "signature_outcomes": ["Increased cross-platform operability", "Informed national policy recommendations"]
       }
     ]
   }

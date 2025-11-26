@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Journal article published in International Journal of Sustainable Energy: "Barriers to Blockchain-based Decentralised Energy Trading: A Systematic Review" (Cited by 49) 📄
-
