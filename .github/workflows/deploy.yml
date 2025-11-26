@@ -63,6 +63,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -105,3 +107,4 @@ jobs:
           folder: _site
           branch: gh-pages
           clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}
