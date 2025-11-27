@@ -5,7 +5,7 @@ permalink: /
 nav: true
 nav_order: 1
 cv_pdf: Samuel_CV.pdf
-subtitle: Research Engineer & Scientist. Sydney, Australia.
+subtitle: Research Engineer & Scientist.
 
 profile:
   align: right
@@ -13,7 +13,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><b>Research & Innovation Consultant</b></p>
-    <p>Secure Decentralized Systems</p>
+    <p>Independent &mdash; Secure Decentralized Systems</p>
     <p>Sydney, Australia</p>
     <p></p>
 
