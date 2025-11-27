@@ -13,8 +13,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><b>Research & Innovation Consultant</b></p>
-    <p>Independent &mdash; Secure Decentralized Systems</p>
-    <p>Sydney, Australia</p>
+    <p>Secure Decentralized Systems</p>
+    <p>Independent consultancy</p>
     <p></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -58,15 +58,16 @@ latest_posts:
 
 <h2>Current Work</h2>
 
-<p>As a <strong>Research & Innovation Consultant</strong> specializing in secure decentralized systems, I design and deploy blockchain-based data integrity systems and verifiable AI infrastructures for fintech and energy startups. My work focuses on architecting scalable, privacy-preserving, and interoperable blockchain solutions with applications in energy systems, carbon markets, and decentralized identity.</p>
+<p>As a <strong>Research & Innovation Consultant</strong> specializing in secure decentralized systems, I design and deploy blockchain-based data integrity systems and verifiable AI infrastructures for fintech and energy startups across Africa and Australia. My work focuses on architecting scalable, privacy-preserving, and interoperable blockchain solutions with applications in energy systems, carbon markets, and decentralized identity.</p>
 
 <p><strong>Current research areas:</strong></p>
 <ul>
-<li>Blockchain-based data integrity systems for fintech and energy applications</li>
-<li>Verifiable AI infrastructures with explainability and traceability</li>
-<li>Hyperledger Fabric networks for identity management and permissioned data exchange</li>
-<li>Scalability, performance, and cryptographic audits for blockchain ventures</li>
-<li>DevOps pipelines for blockchain platforms with containerized testing and CI/CD</li>
+<li>Blockchain-based data integrity systems and verifiable AI infrastructures for fintech and energy startups across Africa and Australia</li>
+<li>Hyperledger Fabric networks supporting identity management, permissioned data exchange, and smart contract governance</li>
+<li>Modular data pipelines integrating blockchain and analytics for AI explainability and traceability</li>
+<li>Scalability, performance, and cryptographic audits for early-stage blockchain ventures</li>
+<li>DevOps pipelines for blockchain platforms with containerized testing, monitoring, and CI/CD automation</li>
+<li>Advising DeFi remittance startups on fiat tokenization, cross-border settlement flows, and on/off-ramp compliance</li>
 </ul>
 
 <h2>Research Contributions</h2>

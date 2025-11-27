@@ -60,8 +60,8 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Research & Innovation Consultant – Secure Decentralized Systems
-      institution: Independent Consultant, Sydney, Australia
+- title: Research & Innovation Consultant
+      institution: Independent consultancy
       year: Jan 2025 – Present
       description:
         - "Leading design and deployment of blockchain-based data integrity systems and verifiable AI infrastructures for fintech and energy startups across Africa and Australia"
@@ -69,6 +69,7 @@
         - "Developing modular data pipelines integrating blockchain and analytics for AI explainability and traceability in distributed systems"
         - "Conducting scalability, performance, and cryptographic audits for early-stage blockchain ventures, ensuring resilience and regulatory compliance"
         - "Delivering DevOps pipelines for blockchain platforms, integrating containerized testing, monitoring, and CI/CD automation using Docker, Kubernetes, and GitHub Actions"
+        - "Advising DeFi remittance startups on tokenization of fiat into stablecoins, cross-border settlement flows, and controls for on/off-ramp compliance"
     - title: Postdoctoral Research Engineer
       institution: CSIRO Data61, Sydney, Australia
       year: Dec 2023 – Dec 2024
