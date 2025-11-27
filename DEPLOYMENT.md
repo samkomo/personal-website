@@ -13,7 +13,7 @@ The site automatically deploys when you push to the `main` branch. The deploymen
 ## 📋 Pre-Deployment Checklist
 
 - [x] ✅ URL updated in `_config.yml`: `https://samkomo.github.io`
-- [x] ✅ Base URL configured: `/personal-website`
+- [x] ✅ Base URL configured: empty (root domain)
 - [x] ✅ GitHub Actions workflow configured
 - [x] ✅ All changes committed and pushed
 
@@ -28,8 +28,8 @@ The site automatically deploys when you push to the `main` branch. The deploymen
 2. **Verify Deployment:**
    - After pushing to `main`, check the **Actions** tab
    - The deployment workflow should run automatically
-   - Once complete, your site will be available at: `https://samkomo.github.io/personal-website/`
-   - Because this repository is published as a project page, keep `baseurl: /personal-website` unless you switch to a custom domain
+   - Once complete, your site will be available at: `https://samkomo.github.io/`
+   - Because this repository now serves from the root domain, keep `baseurl: ""`; set `/personal-website` only if you deploy as a project page
 
 ## 🌐 Custom Domain (Optional)
 
