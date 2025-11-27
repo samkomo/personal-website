@@ -124,4 +124,3 @@ latest_posts:
 <p class="contact-cta"><strong>Interested in collaboration?</strong> Feel free to reach out via <a href="mailto:{{ site.data.socials.email }}">email</a> or connect on <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" target="_blank">LinkedIn</a>.</p>
 
 </div>
-
