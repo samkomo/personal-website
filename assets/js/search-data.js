@@ -7,42 +7,42 @@ ninja.data = [{
     title: "About",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/";
+      window.location.href = "/personal-website/";
     },
   },{id: "nav-about",
           title: "About",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/";
+            window.location.href = "/personal-website/";
           },
         },{id: "nav-publications",
           title: "Publications",
           description: "Research publications in blockchain, privacy-preserving computation, and decentralized energy systems. Includes journal articles, conference papers, book chapters, and patents.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/publications/";
+            window.location.href = "/personal-website/publications/";
           },
         },{id: "nav-projects",
           title: "Projects",
           description: "Research projects organized into frameworks and systems. Frameworks focus on novel architectures and protocols, while systems represent deployed applications and platforms.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/personal-website/projects/";
           },
         },{id: "nav-cv",
           title: "CV",
           description: "Academic CV and professional experience. Download PDF version using the button above.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/personal-website/cv/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
           description: "Courses taught, student supervision, and educational contributions at Strathmore University and UNSW.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/teaching/";
+            window.location.href = "/personal-website/teaching/";
           },
         },{id: "post-a-post-with-plotly-js",
         
@@ -52,7 +52,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/plotly/";
+            window.location.href = "/personal-website/blog/2025/plotly/";
           
         },
       },{id: "post-a-post-with-image-galleries",
@@ -63,7 +63,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/photo-gallery/";
+            window.location.href = "/personal-website/blog/2024/photo-gallery/";
           
         },
       },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
@@ -85,7 +85,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/tabs/";
+            window.location.href = "/personal-website/blog/2024/tabs/";
           
         },
       },{id: "post-a-post-with-typograms",
@@ -96,7 +96,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/typograms/";
+            window.location.href = "/personal-website/blog/2024/typograms/";
           
         },
       },{id: "post-a-post-that-can-be-cited",
@@ -107,7 +107,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/post-citation/";
+            window.location.href = "/personal-website/blog/2024/post-citation/";
           
         },
       },{id: "post-a-post-with-pseudo-code",
@@ -118,7 +118,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/pseudocode/";
+            window.location.href = "/personal-website/blog/2024/pseudocode/";
           
         },
       },{id: "post-a-post-with-code-diff",
@@ -129,7 +129,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/code-diff/";
+            window.location.href = "/personal-website/blog/2024/code-diff/";
           
         },
       },{id: "post-a-post-with-advanced-image-components",
@@ -140,7 +140,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/advanced-images/";
+            window.location.href = "/personal-website/blog/2024/advanced-images/";
           
         },
       },{id: "post-a-post-with-vega-lite",
@@ -151,7 +151,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/vega-lite/";
+            window.location.href = "/personal-website/blog/2024/vega-lite/";
           
         },
       },{id: "post-a-post-with-geojson",
@@ -162,7 +162,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/geojson-map/";
+            window.location.href = "/personal-website/blog/2024/geojson-map/";
           
         },
       },{id: "post-a-post-with-echarts",
@@ -173,7 +173,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/echarts/";
+            window.location.href = "/personal-website/blog/2024/echarts/";
           
         },
       },{id: "post-a-post-with-chart-js",
@@ -184,7 +184,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/chartjs/";
+            window.location.href = "/personal-website/blog/2024/chartjs/";
           
         },
       },{id: "post-a-post-with-tikzjax",
@@ -195,7 +195,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/tikzjax/";
+            window.location.href = "/personal-website/blog/2023/tikzjax/";
           
         },
       },{id: "post-a-post-with-bibliography",
@@ -206,7 +206,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/post-bibliography/";
+            window.location.href = "/personal-website/blog/2023/post-bibliography/";
           
         },
       },{id: "post-a-post-with-jupyter-notebook",
@@ -217,7 +217,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/jupyter-notebook/";
+            window.location.href = "/personal-website/blog/2023/jupyter-notebook/";
           
         },
       },{id: "post-a-post-with-custom-blockquotes",
@@ -228,7 +228,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/custom-blockquotes/";
+            window.location.href = "/personal-website/blog/2023/custom-blockquotes/";
           
         },
       },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
@@ -239,7 +239,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/sidebar-table-of-contents/";
+            window.location.href = "/personal-website/blog/2023/sidebar-table-of-contents/";
           
         },
       },{id: "post-a-post-with-audios",
@@ -250,7 +250,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/audios/";
+            window.location.href = "/personal-website/blog/2023/audios/";
           
         },
       },{id: "post-a-post-with-videos",
@@ -261,7 +261,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/videos/";
+            window.location.href = "/personal-website/blog/2023/videos/";
           
         },
       },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
@@ -272,7 +272,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/tables/";
+            window.location.href = "/personal-website/blog/2023/tables/";
           
         },
       },{id: "post-a-post-with-table-of-contents",
@@ -283,7 +283,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/table-of-contents/";
+            window.location.href = "/personal-website/blog/2023/table-of-contents/";
           
         },
       },{id: "post-a-post-with-giscus-comments",
@@ -294,7 +294,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2022/giscus-comments/";
+            window.location.href = "/personal-website/blog/2022/giscus-comments/";
           
         },
       },{id: "post-displaying-external-posts-on-your-al-folio-blog",
@@ -316,7 +316,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/assets/pdf/example_pdf.pdf";
+            window.location.href = "/personal-website/assets/pdf/example_pdf.pdf";
           
         },
       },{id: "post-a-post-with-diagrams",
@@ -327,7 +327,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2021/diagrams/";
+            window.location.href = "/personal-website/blog/2021/diagrams/";
           
         },
       },{id: "post-a-distill-style-blog-post",
@@ -338,7 +338,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2021/distill/";
+            window.location.href = "/personal-website/blog/2021/distill/";
           
         },
       },{id: "post-a-post-with-twitter",
@@ -349,7 +349,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2020/twitter/";
+            window.location.href = "/personal-website/blog/2020/twitter/";
           
         },
       },{id: "post-a-post-with-disqus-comments",
@@ -360,7 +360,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/disqus-comments/";
+            window.location.href = "/personal-website/blog/2015/disqus-comments/";
           
         },
       },{id: "post-a-post-with-math",
@@ -371,7 +371,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/math/";
+            window.location.href = "/personal-website/blog/2015/math/";
           
         },
       },{id: "post-a-post-with-code",
@@ -382,7 +382,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/code/";
+            window.location.href = "/personal-website/blog/2015/code/";
           
         },
       },{id: "post-a-post-with-images",
@@ -393,7 +393,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/images/";
+            window.location.href = "/personal-website/blog/2015/images/";
           
         },
       },{id: "post-a-post-with-formatting-and-links",
@@ -404,14 +404,14 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/formatting-and-links/";
+            window.location.href = "/personal-website/blog/2015/formatting-and-links/";
           
         },
       },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
+              window.location.href = "/personal-website/books/the_godfather/";
             },},{id: "news-paper-accepted-at-ieee-icse-seis-2017-deploying-large-scale-school-census-hub-an-experience-report",
           title: 'Paper accepted at IEEE ICSE-SEIS 2017: “Deploying Large Scale School Census Hub: An...',
           description: "",
@@ -479,58 +479,58 @@ ninja.data = [{
           title: 'Mombasa County Education Analytics Platform (MCEA)',
           description: "An integrated data platform for profiling schools and driving outcome-based educational resource allocation across Mombasa County.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/10_project/";
+              window.location.href = "/personal-website/projects/10_project/";
             },},{id: "projects-harb-hypergraph-based-adaptive-consortium-blockchain",
           title: 'HARB - Hypergraph-Based Adaptive Consortium Blockchain',
           description: "A blockchain architecture designed to balance decentralization and scalability for decentralized energy trading systems.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/personal-website/projects/1_project/";
             },},{id: "projects-plexichain-secure-blockchain-based-flexibility-aggregator",
           title: 'PlexiChain - Secure Blockchain-Based Flexibility Aggregator',
           description: "A secure blockchain framework integrating Physical Unclonable Functions (PUFs) and NFTs to strengthen device identity and protect decentralized IoT nodes.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
+              window.location.href = "/personal-website/projects/2_project/";
             },},{id: "projects-cypherchain-privacy-preserving-data-aggregation-framework",
           title: 'CypherChain - Privacy-Preserving Data Aggregation Framework',
           description: "A blockchain-based framework enabling privacy-preserving Demand Response offer aggregation through Secure Multiparty Computation and Homomorphic Encryption.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
+              window.location.href = "/personal-website/projects/3_project/";
             },},{id: "projects-bailif-blockchain-agnostic-interoperability-framework",
           title: 'BAILIF - Blockchain Agnostic Interoperability Framework',
           description: "A framework enabling secure, atomic, policy-aware interoperability between heterogeneous blockchain networks in decentralized energy systems.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
+              window.location.href = "/personal-website/projects/4_project/";
             },},{id: "projects-caeser-cybersecurity-of-consumer-energy-resources",
           title: 'CAESER - Cybersecurity of Consumer Energy Resources',
           description: "A national cybersecurity project focused on enhancing the cybersecurity and resilience of consumer energy resources (CERs) in Australian smart grids.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
+              window.location.href = "/personal-website/projects/5_project/";
             },},{id: "projects-ccdi-carbon-certification-amp-development-initiative",
           title: 'CCDI - Carbon Certification &amp;amp; Development Initiative',
           description: "A blockchain-based framework for verifying and certifying voluntary carbon credits with traceability, transparency, and auditability.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
+              window.location.href = "/personal-website/projects/6_project/";
             },},{id: "projects-agri-wallet-for-smallholder-farmers",
           title: 'Agri-Wallet for Smallholder Farmers',
           description: "A blockchain-powered payment and booking system integrated with IoT and AI components to empower smallholder farmers in Sub-Saharan Africa.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
+              window.location.href = "/personal-website/projects/7_project/";
             },},{id: "projects-tradelens-global-supply-chain-blockchain",
           title: 'TradeLens Global Supply Chain Blockchain',
           description: "A blockchain-based platform to digitize global supply chains, enabling real-time, tamper-proof sharing of shipping data across ports, carriers, customs, and logistics providers.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
+              window.location.href = "/personal-website/projects/8_project/";
             },},{id: "projects-cognitive-learning-companion-clc",
           title: 'Cognitive Learning Companion (CLC)',
           description: "An adaptive, sensor-powered learning assistant for African primary schools capable of personalized feedback, attention tracking, and cognitive load estimation.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/personal-website/projects/9_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/Samuel_CV.pdf", "_blank");
+          window.open("/personal-website/assets/pdf/Samuel_CV.pdf", "_blank");
         },
       },{
         id: 'social-email',
