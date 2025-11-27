@@ -5,14 +5,14 @@ permalink: /
 nav: true
 nav_order: 1
 cv_pdf: Samuel_CV.pdf
-subtitle: Research Engineer & Scientist.
+subtitle: Secure AI & Blockchain Systems Architect.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><b>Dr. Karumba – Research and Innovation Consultant</b></p>
+    <p><b>Dr. Samuel Karumba – Secure AI & Blockchain Systems Architect</b></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
