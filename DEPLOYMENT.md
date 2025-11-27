@@ -29,7 +29,7 @@ The site automatically deploys when you push to the `main` branch. The deploymen
    - After pushing to `main`, check the **Actions** tab
    - The deployment workflow should run automatically
    - Once complete, your site will be available at: `https://samkomo.github.io/`
-   - Because this repository now serves from the root domain, keep `baseurl: ""`; set `/your-project-name` only if you deploy as a project page
+   - Because this repository now serves from the root domain, keep `baseurl: ""`; set `/personal-website` only if you deploy as a project page
 
 ## 🌐 Custom Domain (Optional)
 

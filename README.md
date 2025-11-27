@@ -48,7 +48,7 @@ Personal website and portfolio built with [al-folio](https://github.com/alshediv
 1. **Update `_config.yml`:**
 
    - Set your name: `first_name`, `last_name`
-   - Update `url` and `baseurl` for your GitHub Pages deployment (leave `baseurl` empty for root domains; set `/your-project-name` only if you deploy as a project page)
+   - Update `url` and `baseurl` for your GitHub Pages deployment (empty for root domains, set `/personal-website` only if you deploy as a project page)
    - Customize `description` and other site settings
 
 2. **Update Google Scholar Metrics:**
