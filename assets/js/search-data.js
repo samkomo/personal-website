@@ -18,28 +18,28 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Research publications and patents in blockchain, privacy-preserving computation, secure AI, energy cybersecurity, decentralized energy systems, and digital trust infrastructure.",
+          description: "Research publications, patents, and technical outputs spanning AI security, privacy-preserving computation, secure distributed systems, and cyber-physical energy security.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/personal-website/publications/";
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "Research projects aligned with the latest CV, spanning secure AI, blockchain interoperability, energy cybersecurity, carbon-market traceability, and digital trust systems.",
+          description: "Selected research systems and frameworks spanning AI security, privacy-preserving computation, cyber-physical energy security, and secure distributed coordination.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/personal-website/projects/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Current academic and professional CV covering secure AI, blockchain, distributed systems, energy cybersecurity, publications, patents, and consulting experience. Download the PDF version using the button above.",
+          description: "Current academic and professional CV covering trustworthy AI, AI security and privacy, secure distributed systems, cyber-physical security, applied cryptography, publications, patents, and research funding. Download the PDF version using the button above.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/personal-website/cv/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Courses taught, student supervision, and educational contributions across mobile development, blockchain systems, cybersecurity, privacy-preserving computing, and applied distributed systems.",
+          description: "Selected teaching, supervision, and mentoring contributions across mobile systems, web security, distributed systems, and applied computing.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/personal-website/teaching/";
@@ -56,8 +56,8 @@ ninja.data = [{
           section: "News",},{id: "news-patent-granted-us9961139b2-cooperative-download-among-low-end-devices-under-resource-constrained-environment",
           title: 'Patent granted: US9961139B2 - Cooperative Download among Low-End Devices Under Resource-Constrained Environment 🎉...',
           description: "",
-          section: "News",},{id: "news-patent-granted-us20180189449a1-tracking-items-used-for-providing-medical-services",
-          title: 'Patent granted: US20180189449A1 - Tracking Items Used for Providing Medical Services 🎉',
+          section: "News",},{id: "news-patent-application-published-us20180189449a1-tracking-items-used-for-providing-medical-services",
+          title: 'Patent application published: US20180189449A1 - Tracking Items Used for Providing Medical Services',
           description: "",
           section: "News",},{id: "news-paper-accepted-at-ieee-icbc-2020-a-relational-network-framework-for-interoperability-in-distributed-energy-trading",
           title: 'Paper accepted at IEEE ICBC 2020: “A Relational Network Framework for Interoperability in...',
@@ -104,57 +104,67 @@ ninja.data = [{
           section: "News",},{id: "news-two-papers-accepted-at-acm-e-energy-2024-energipay-off-chain-payment-channel-for-blockchain-enabled-peer-to-peer-energy-trading-and-systematic-study-of-cybersecurity-threats-for-smart-inverters",
           title: 'Two papers accepted at ACM e-Energy 2024: “EnergiPay: Off-chain Payment Channel for Blockchain-enabled...',
           description: "",
-          section: "News",},{id: "news-began-independent-research-and-innovation-consulting-focused-on-blockchain-based-data-integrity-systems-and-verifiable-ai-infrastructure",
-          title: 'Began independent research and innovation consulting focused on blockchain-based data integrity systems and...',
+          section: "News",},{id: "news-joined-guardlydata-as-a-research-scientist-focusing-on-ai-data-security-and-privacy-for-enterprise-ai-workflows",
+          title: 'Joined GuardlyData as a Research Scientist, focusing on AI data security and privacy...',
           description: "",
-          section: "News",},{id: "projects-mombasa-county-education-analytics-platform-mcea",
-          title: 'Mombasa County Education Analytics Platform (MCEA)',
-          description: "An integrated data platform for profiling schools and driving outcome-based educational resource allocation across Mombasa County.",
+          section: "News",},{id: "projects-distributed-education-data-platform",
+          title: 'Distributed education data platform',
+          description: "School census and school information systems for resource-constrained environments, with field data collection, validation, and reporting workflows.",
           section: "Projects",handler: () => {
               window.location.href = "/personal-website/projects/10_project/";
-            },},{id: "projects-harb-hypergraph-based-adaptive-consortium-blockchain",
-          title: 'HARB - Hypergraph-Based Adaptive Consortium Blockchain',
-          description: "A blockchain architecture designed to balance decentralization and scalability for decentralized energy trading systems.",
+            },},{id: "projects-cooperative-mobile-content-distribution-system",
+          title: 'Cooperative mobile content distribution system',
+          description: "Resource-aware cooperative downloading for low-end mobile devices operating under bandwidth, battery, and storage constraints.",
+          section: "Projects",handler: () => {
+              window.location.href = "/personal-website/projects/11_project/";
+            },},{id: "projects-farm-cultivation-quality-analytics",
+          title: 'Farm cultivation quality analytics',
+          description: "Knowledge-graph and machine-learning support for cultivation-quality assessment and evidence-based agricultural decision-making.",
+          section: "Projects",handler: () => {
+              window.location.href = "/personal-website/projects/12_project/";
+            },},{id: "projects-ai-native-data-protection-for-enterprise-ai-workflows",
+          title: 'AI-native data protection for enterprise AI workflows',
+          description: "Detection, redaction, and auditing architectures for sensitive data exposure across copilots, browsers, IDEs, RAG, and agentic AI workflows.",
           section: "Projects",handler: () => {
               window.location.href = "/personal-website/projects/1_project/";
-            },},{id: "projects-plexichain-secure-blockchain-based-flexibility-aggregator",
-          title: 'PlexiChain - Secure Blockchain-Based Flexibility Aggregator',
-          description: "A secure blockchain framework integrating Physical Unclonable Functions (PUFs) and NFTs to strengthen device identity and protect decentralized IoT nodes.",
+            },},{id: "projects-caeser-cybersecurity-analysis-for-consumer-energy-resources",
+          title: 'CAESER - Cybersecurity analysis for consumer energy resources',
+          description: "Cybersecurity threat modelling and stakeholder-facing analysis for smart inverters, distributed energy resources, and grid-edge infrastructure.",
           section: "Projects",handler: () => {
               window.location.href = "/personal-website/projects/2_project/";
-            },},{id: "projects-cypherchain-privacy-preserving-data-aggregation-framework",
-          title: 'CypherChain - Privacy-Preserving Data Aggregation Framework',
-          description: "A blockchain-based framework enabling privacy-preserving Demand Response offer aggregation through Secure Multiparty Computation and Homomorphic Encryption.",
+            },},{id: "projects-energipay-off-chain-payment-channels-for-peer-to-peer-energy-trading",
+          title: 'EnergiPay - Off-chain payment channels for peer-to-peer energy trading',
+          description: "An off-chain payment-channel framework for blockchain-enabled peer-to-peer energy trading and lower-overhead settlement.",
           section: "Projects",handler: () => {
               window.location.href = "/personal-website/projects/3_project/";
-            },},{id: "projects-bailif-blockchain-agnostic-interoperability-framework",
-          title: 'BAILIF - Blockchain Agnostic Interoperability Framework',
-          description: "A framework enabling secure, atomic, policy-aware interoperability between heterogeneous blockchain networks in decentralized energy systems.",
+            },},{id: "projects-cypherchain-privacy-preserving-data-aggregation-for-demand-response",
+          title: 'CypherChain - Privacy-preserving data aggregation for demand response',
+          description: "Privacy-preserving aggregation for blockchain-based demand response using secure multiparty computation and homomorphic encryption.",
           section: "Projects",handler: () => {
               window.location.href = "/personal-website/projects/4_project/";
-            },},{id: "projects-caeser-cybersecurity-of-consumer-energy-resources",
-          title: 'CAESER - Cybersecurity of Consumer Energy Resources',
-          description: "A national cybersecurity project focused on enhancing the cybersecurity and resilience of consumer energy resources (CERs) in Australian smart grids.",
+            },},{id: "projects-plexichain-secure-blockchain-based-flexibility-aggregation",
+          title: 'PlexiChain - Secure blockchain-based flexibility aggregation',
+          description: "A secure flexibility-aggregation framework for distributed energy resources under adversarial grid conditions.",
           section: "Projects",handler: () => {
               window.location.href = "/personal-website/projects/5_project/";
-            },},{id: "projects-ccdi-carbon-certification-amp-development-initiative",
-          title: 'CCDI - Carbon Certification &amp;amp; Development Initiative',
-          description: "A blockchain-based framework for verifying and certifying voluntary carbon credits with traceability, transparency, and auditability.",
+            },},{id: "projects-bailif-blockchain-agnostic-interoperability-framework",
+          title: 'BAILIF - Blockchain-agnostic interoperability framework',
+          description: "Cross-chain interoperability using decentralised notaries, attestation, and proof-of-concept exchange across blockchain networks.",
           section: "Projects",handler: () => {
               window.location.href = "/personal-website/projects/6_project/";
-            },},{id: "projects-agri-wallet-for-smallholder-farmers",
-          title: 'Agri-Wallet for Smallholder Farmers',
-          description: "A blockchain-powered payment and booking system integrated with IoT and AI components to empower smallholder farmers in Sub-Saharan Africa.",
+            },},{id: "projects-temporary-immutability-for-prosumer-side-energy-trading",
+          title: 'Temporary Immutability for prosumer-side energy trading',
+          description: "A removable blockchain architecture that preserves auditability while allowing governed record removal in prosumer energy trading.",
           section: "Projects",handler: () => {
               window.location.href = "/personal-website/projects/7_project/";
-            },},{id: "projects-tradelens-global-supply-chain-blockchain",
-          title: 'TradeLens Global Supply Chain Blockchain',
-          description: "A blockchain-based platform to digitize global supply chains, enabling real-time, tamper-proof sharing of shipping data across ports, carriers, customs, and logistics providers.",
+            },},{id: "projects-harb-hypergraph-based-adaptive-consortium-blockchain",
+          title: 'HARB - Hypergraph-based adaptive consortium blockchain',
+          description: "A hypergraph-based consortium blockchain for scalable decentralised energy trading and adaptive coordination.",
           section: "Projects",handler: () => {
               window.location.href = "/personal-website/projects/8_project/";
-            },},{id: "projects-cognitive-learning-companion-clc",
-          title: 'Cognitive Learning Companion (CLC)',
-          description: "An adaptive, sensor-powered learning assistant for African primary schools capable of personalized feedback, attention tracking, and cognitive load estimation.",
+            },},{id: "projects-relational-network-framework-for-distributed-energy-trading",
+          title: 'Relational network framework for distributed energy trading',
+          description: "A hypergraph-based model for analysing interoperability and interaction structure in distributed energy trading systems.",
           section: "Projects",handler: () => {
               window.location.href = "/personal-website/projects/9_project/";
             },},{
