@@ -12,11 +12,6 @@ profile:
   image_circular: false # crops the image to make it circular
   watermark_primary: Samuel M. Karumba, PhD
   watermark_secondary: Trustworthy AI | Secure Distributed Systems
-  image_caption: "Graduation portrait at UNSW Sydney, marking the transition from doctoral research in distributed energy systems to current work in AI security and privacy."
-  more_info: >
-    <p class="profile-name"><b>Samuel M. Karumba, PhD</b></p>
-    <p class="profile-role">Research Scientist, AI Data Security and Privacy</p>
-    <p class="profile-context">GuardlyData | Applied security, privacy-preserving computation, and secure distributed systems</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
