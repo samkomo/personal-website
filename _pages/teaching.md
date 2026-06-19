@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Courses taught, student supervision, and educational contributions at Strathmore University and UNSW.
+description: Courses taught, student supervision, and educational contributions across mobile development, blockchain systems, cybersecurity, privacy-preserving computing, and applied distributed systems.
 nav: true
 nav_order: 6
 ---
@@ -11,7 +11,7 @@ nav_order: 6
 
 <h2>Overview</h2>
 
-<p>I have been actively involved in teaching and student supervision at both <strong>Strathmore University</strong> (2015-2017) and the <strong>University of New South Wales (UNSW)</strong> (2020-2023), delivering lectures, supervising labs, and mentoring research students. My teaching spans mobile development (iOS/Apple Development), blockchain systems, privacy-preserving technologies, and cybersecurity, bridging theoretical concepts with practical applications in both mobile and decentralized systems.</p>
+<p>I have been actively involved in teaching and student supervision at both <strong>Strathmore University</strong> (2015-2017) and the <strong>University of New South Wales (UNSW)</strong> (2020-2023), delivering lectures, supervising labs, and mentoring research students. My teaching aligns with my current CV focus: mobile development, blockchain systems, secure AI infrastructure, privacy-preserving technologies, cybersecurity, and applied distributed systems.</p>
 
 <div class="row mt-5 mb-5">
   <div class="col-md-3 col-sm-6 mb-4">

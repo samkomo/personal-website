@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started as Research & Innovation Consultant at Secure Decentralized Systems, leading design and deployment of blockchain-based data integrity systems and verifiable AI infrastructures 🚀
+Began independent research and innovation consulting focused on blockchain-based data integrity systems and verifiable AI infrastructure 🚀

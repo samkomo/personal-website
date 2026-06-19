@@ -24,7 +24,7 @@
 - title: Bio Statement
   type: bio
   contents:
-    - "Dr. Samuel Karumba is a researcher in distributed systems and ubiquitous computing, with a focus on secure protocols and privacy-preserving architectures. His work examines blockchain security, secure multiparty computation, and context-aware systems. He has contributed to national research programs through work at CSIRO and previously held roles with IBM and UNSW that centered on protocol design for data integrity and cross-system interoperability. His publications address federated learning, zero-knowledge proofs, blockchain consensus mechanisms, and context-aware computing in ubiquitous environments. He works across African and Australian research ecosystems on cryptographic protocols and privacy-preserving system design."
+    - "Dr. Samuel Karumba designs secure, privacy-preserving distributed systems across blockchain, AI, energy cybersecurity, and digital trust infrastructure. His work spans CSIRO Data61, UNSW, IBM Research Africa, and independent consulting, with contributions to blockchain interoperability, verifiable AI, carbon-market traceability, consumer energy resource cybersecurity, and patented IoT/blockchain systems. He works across African and Australian research ecosystems on cryptographic protocols, privacy-preserving computation, and resilient decentralized system design."
 
 - title: Education
   type: time_table
@@ -159,11 +159,12 @@
         - Published at IEEE ICBC 2023
         - Enables secure atomic swaps and cross-chain data exchange
     - title: CAESER - Cybersecurity of Consumer Energy Resources
-      year: 2023 - Present
+      year: Nov 2023 - Oct 2024
       description:
         - National cybersecurity project for Australian smart grids
         - Event-driven resilience, machine learning, and policy-guided cyber defense
-        - Cross-institutional collaboration with CSIRO and UNSW
+        - Project period: November 2023 - October 2024
+        - Cross-institutional collaboration with CSIRO, Edith Cowan University, and UNSW
     - title: CCDI - Carbon Certification & Development Initiative
       year: 2022 - 2023
       description:
@@ -219,6 +220,14 @@
       link: https://scholar.google.com/citations?user=XL1vtsgAAAAJ
     - name: Patents
       value: "3 (Granted)"
+
+- title: Downloadable CV Versions
+  type: list
+  contents:
+    - '<a href="/assets/pdf/Samuel_CV.pdf" target="_blank" rel="noopener noreferrer">General academic and professional CV</a>'
+    - '<a href="/assets/pdf/Samuel_Blockchain_CV.pdf" target="_blank" rel="noopener noreferrer">Blockchain and digital trust CV</a>'
+    - '<a href="/assets/pdf/Samuel_Data_Science_CV.pdf" target="_blank" rel="noopener noreferrer">Data science, AI, and analytics CV</a>'
+    - '<a href="/assets/pdf/Samuel_Python_CV.pdf" target="_blank" rel="noopener noreferrer">Python and software engineering CV</a>'
 
 - title: Research Interests
   type: nested_list

@@ -5,14 +5,14 @@ permalink: /
 nav: true
 nav_order: 1
 cv_pdf: Samuel_CV.pdf
-subtitle: Secure AI & Blockchain Systems Architect.
+subtitle: Secure AI, Blockchain & Distributed Systems Researcher.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><b>Dr. Samuel Karumba – Secure AI & Blockchain Systems Architect</b></p>
+    <p><b>Dr. Samuel Karumba – Secure AI, Blockchain & Distributed Systems Researcher</b></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -30,13 +30,13 @@ latest_posts:
 
 <div class="about-page-content">
 
-<p class="tagline">Privacy-focused architect of decentralized, secure systems in AI and blockchain.</p>
+<p class="tagline">Researcher building privacy-preserving AI, blockchain, and distributed systems for digital trust infrastructure.</p>
 
-<p class="intro-text">I am a researcher in distributed systems and ubiquitous computing, with a focus on secure protocols and privacy-preserving architectures. My work examines blockchain security, secure multiparty computation, and context-aware systems. I have contributed to national research programs through work at CSIRO and previously held roles with IBM and UNSW that centered on protocol design for data integrity and cross-system interoperability. My publications address federated learning, zero-knowledge proofs, blockchain consensus mechanisms, and context-aware computing in ubiquitous environments. I work across African and Australian research ecosystems on cryptographic protocols and privacy-preserving system design.</p>
+<p class="intro-text">I design secure, privacy-preserving distributed systems across blockchain, AI, energy cybersecurity, and digital trust infrastructure. My work spans CSIRO Data61, UNSW, IBM Research Africa, and independent consulting, with contributions to blockchain interoperability, verifiable AI, carbon-market traceability, consumer energy resource cybersecurity, and patented IoT/blockchain systems. I work across African and Australian research ecosystems on cryptographic protocols, privacy-preserving computation, and resilient decentralized system design.</p>
 
 <h2>Research Focus</h2>
 
-<p>I architect <strong>privacy-by-design systems</strong> that embed trust into the foundation of digital ecosystems. My work spans distributed systems (70%) and ubiquitous computing (30%):</p>
+<p>I architect <strong>privacy-by-design systems</strong> that embed trust into the foundation of digital ecosystems. My work spans distributed systems, secure AI infrastructure, ubiquitous computing, and applied cryptography:</p>
 
 <div class="research-areas">
   <div class="research-item">
@@ -55,7 +55,7 @@ latest_posts:
 
 <h2>Current Work</h2>
 
-<p>As a <strong>Research & Innovation Consultant</strong> specializing in secure decentralized systems, I design and deploy blockchain-based data integrity systems and verifiable AI infrastructures for fintech and energy startups. My work focuses on architecting scalable, privacy-preserving, and interoperable blockchain solutions with applications in energy systems, carbon markets, and decentralized identity.</p>
+<p>As a <strong>Research & Innovation Consultant</strong> specializing in secure decentralized systems, I design and deploy blockchain-based data integrity systems and verifiable AI infrastructures for fintech, energy, and climate-tech teams across Africa and Australia. My work focuses on scalable, privacy-preserving, and interoperable architectures for energy systems, carbon markets, decentralized identity, and compliance-aware settlement infrastructure.</p>
 
 <p><strong>Current research areas:</strong></p>
 <ul>
@@ -64,6 +64,17 @@ latest_posts:
 <li>Hyperledger Fabric networks for identity management and permissioned data exchange</li>
 <li>Scalability, performance, and cryptographic audits for blockchain ventures</li>
 <li>DevOps pipelines for blockchain platforms with containerized testing and CI/CD</li>
+<li>Compliance-aware stablecoin, tokenization, and cross-border settlement architectures</li>
+</ul>
+
+<h2>Selected Impact</h2>
+
+<ul class="impact-list">
+<li>Developed four blockchain frameworks for decentralized energy security: HARB, PlexiChain, CypherChain, and BAILIF.</li>
+<li>Co-invented three granted US patents in blockchain, IoT, and resource-constrained distributed systems.</li>
+<li>Piloted Agri-Wallet systems that reached 2,000+ smallholder farmers.</li>
+<li>Improved grid-edge incident detection precision by 30% through AI-driven anomaly detection research.</li>
+<li>Delivered research and systems work across CSIRO Data61, UNSW, IBM Research Africa, and independent consulting.</li>
 </ul>
 
 <h2>Research Contributions</h2>
@@ -95,11 +106,11 @@ latest_posts:
 
 <div class="stats-row">
   <div class="stat-box">
-    <div class="stat-number">12+</div>
+    <div class="stat-number">20</div>
     <div class="stat-text">Publications</div>
   </div>
   <div class="stat-box">
-    <div class="stat-number">60+</div>
+    <div class="stat-number">340</div>
     <div class="stat-text">Citations</div>
   </div>
   <div class="stat-box">

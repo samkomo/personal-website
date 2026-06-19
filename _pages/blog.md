@@ -1,11 +1,11 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: Research Notes
 nav: false
 nav_order: 1
 pagination:
-  enabled: true
+  enabled: false
   collection: posts
   permalink: /page/:num/
   per_page: 5
@@ -27,7 +27,9 @@ pagination:
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
   </div>
-  {% endif %}
+{% endif %}
+
+  <p>This section is reserved for occasional research notes, technical essays, and field updates. New posts will appear here once they are curated for publication.</p>
 
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
 
@@ -101,13 +103,14 @@ pagination:
 
 {% endif %}
 
-  <ul class="post-list">
+  {% if page.pagination.enabled %}
+    {% assign postlist = paginator.posts %}
+  {% else %}
+    {% assign postlist = site.posts %}
+  {% endif %}
 
-    {% if page.pagination.enabled %}
-      {% assign postlist = paginator.posts %}
-    {% else %}
-      {% assign postlist = site.posts %}
-    {% endif %}
+  {% if postlist.size > 0 %}
+  <ul class="post-list">
 
     {% for post in postlist %}
 
@@ -188,6 +191,9 @@ pagination:
     {% endfor %}
 
   </ul>
+  {% else %}
+    <p>No public research notes are published yet.</p>
+  {% endif %}
 
 {% if page.pagination.enabled %}
 {% include pagination.liquid %}

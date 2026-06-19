@@ -2,14 +2,14 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Research projects organized into frameworks and systems. Frameworks focus on novel architectures and protocols, while systems represent deployed applications and platforms.
+description: Research projects aligned with the latest CV, spanning secure AI, blockchain interoperability, energy cybersecurity, carbon-market traceability, and digital trust systems.
 nav: true
 nav_order: 3
 ---
 
 <div class="projects-page">
   <div class="projects-intro">
-    <p class="lead">Research projects organized into <strong>frameworks</strong> and <strong>systems</strong>. Frameworks focus on novel architectures and protocols, while systems represent deployed applications and platforms.</p>
+    <p class="lead">Research projects aligned with my latest CV, organized into <strong>frameworks</strong> and <strong>systems</strong>. The portfolio spans secure AI infrastructure, blockchain interoperability, energy cybersecurity, carbon-market traceability, and digital trust systems.</p>
   </div>
 
 {% assign systems = site.data.projects | where: "category", "systems" | sort: "importance" %}

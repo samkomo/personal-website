@@ -2,12 +2,16 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Research publications in blockchain, privacy-preserving computation, and decentralized energy systems. Includes journal articles, conference papers, book chapters, and patents.
+description: Research publications and patents in blockchain, privacy-preserving computation, secure AI, energy cybersecurity, decentralized energy systems, and digital trust infrastructure.
 nav: true
 nav_order: 2
 ---
 
 <div class="publications-page">
+
+<div class="publications-intro">
+  <p>My publication record connects blockchain security, privacy-preserving computation, decentralized energy systems, secure AI infrastructure, and ubiquitous computing. The work includes journal articles, conference papers, book chapters, thesis outputs, preprints, reports, and three granted US patents.</p>
+</div>
 
 <!-- Bibsearch Feature -->
 

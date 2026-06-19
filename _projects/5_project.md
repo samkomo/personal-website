@@ -7,8 +7,8 @@ importance: 5
 category: systems
 slug: 5_project
 related_publications: true
-status: Active
-period: 2023-2024
+status: Completed
+period: Nov 2023-Oct 2024
 ---
 
 ## Background
@@ -134,7 +134,7 @@ CAESER provides a policy-aware reference framework for national energy infrastru
 
 ## Status
 
-**Active** (November 2023 – October 2024) - Cross-institutional collaboration between CSIRO's Cybersecurity and Quantum Systems group, Edith Cowan University, and UNSW Energy Informatics groups. The project is co-funded by CSIRO's CIPR Initiative and the Cyber Security Cooperative Research Centre (CSCRC), in collaboration with CSIRO's Smart Energy Mission (SEM).
+**Completed** (November 2023 – October 2024) - Cross-institutional collaboration between CSIRO's Cybersecurity and Quantum Systems group, Edith Cowan University, and UNSW Energy Informatics groups. The project is co-funded by CSIRO's CIPR Initiative and the Cyber Security Cooperative Research Centre (CSCRC), in collaboration with CSIRO's Smart Energy Mission (SEM).
 
 **Project Information**: [CSIRO CAESER Project Page](https://research.csiro.au/cybersecurity-quantum-systems/cybersecurity-of-consumer-energy-resources-caeser/)
 

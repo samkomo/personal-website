@@ -2,14 +2,16 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: GitHub repositories and open-source contributions. See `_data/repositories.yml` to customize.
+description: Public code, research prototypes, and implementation artifacts published through GitHub.
 nav: false
 nav_order: 4
 ---
 
+<p>This page highlights public implementation work connected to my research and systems practice. Selected repositories will appear here as projects are prepared for public release and long-term maintenance.</p>
+
 {% if site.data.repositories.github_users %}
 
-## GitHub users
+## GitHub Profile
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for user in site.data.repositories.github_users %}

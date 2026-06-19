@@ -160,8 +160,8 @@
   related_publications: false
   github: null
   redirect: null
-  status: Active
-  period: 2023-2024
+  status: Completed
+  period: Nov 2023-Oct 2024
   content: |
     CAESER (Cybersecurity of Consumer Energy Resources) is a national cybersecurity project focused on decentralized energy infrastructure. It addresses emerging threats in DERs (Distributed Energy Resources) using event-driven resilience, machine learning, and policy-guided cyber defense.
 
@@ -194,7 +194,7 @@
 
     ## Status
 
-    **Active** (2023-2024) - Cross-institutional collaboration with CSIRO Cybersecurity Systems and UNSW Energy Informatics groups.
+    **Completed** (November 2023 - October 2024) - Cross-institutional collaboration with CSIRO Cybersecurity and Quantum Systems, Edith Cowan University, and UNSW Energy Informatics groups.
 
 - key: ccdi
   slug: 6_project

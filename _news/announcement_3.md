@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started as Postdoctoral Research Engineer at CSIRO Data61, leading engineering of cybersecurity and blockchain-based assurance frameworks within the CAESER program 🔬
+Started postdoctoral research at CSIRO Data61, contributing to cybersecurity and blockchain-based assurance frameworks within the CAESER program 🔬
