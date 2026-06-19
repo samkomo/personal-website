@@ -17,7 +17,7 @@ layout: default
 
   <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div class="profile about-profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
@@ -28,10 +28,28 @@ layout: default
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+          <div class="profile-image-shell{% if page.profile.watermark_primary %} profile-image-watermarked{% endif %}">
+            {%
+              include figure.liquid
+              loading="eager"
+              path=profile_image_path
+              class=profile_image_class
+              sizes=sizes
+              alt=page.profile.image
+              cache_bust=true
+            %}
+            {% if page.profile.watermark_primary %}
+              <div class="profile-image-watermark" aria-hidden="true">
+                <span class="profile-image-watermark-primary">{{ page.profile.watermark_primary }}</span>
+                {% if page.profile.watermark_secondary %}
+                  <span class="profile-image-watermark-secondary">{{ page.profile.watermark_secondary }}</span>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+          {% if page.profile.image_caption %}
+            <p class="caption">{{ page.profile.image_caption }}</p>
+          {% endif %}
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">
