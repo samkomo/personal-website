@@ -2,14 +2,14 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Research projects aligned with the latest CV, spanning secure AI, blockchain interoperability, energy cybersecurity, carbon-market traceability, and digital trust systems.
+description: Selected research systems and frameworks spanning AI security, privacy-preserving computation, cyber-physical energy security, and secure distributed coordination.
 nav: true
 nav_order: 3
 ---
 
 <div class="projects-page">
   <div class="projects-intro">
-    <p class="lead">Research projects aligned with my latest CV, organized into <strong>frameworks</strong> and <strong>systems</strong>. The portfolio spans secure AI infrastructure, blockchain interoperability, energy cybersecurity, carbon-market traceability, and digital trust systems.</p>
+    <p class="lead">Selected research projects from my current CV, organised into <strong>systems</strong> and <strong>frameworks</strong>. The portfolio spans AI data security, privacy-preserving computation, cyber-physical energy security, distributed coordination, and resource-constrained platforms.</p>
   </div>
 
 {% assign systems = site.data.projects | where: "category", "systems" | sort: "importance" %}
@@ -23,7 +23,7 @@ nav_order: 3
         <i class="fa-solid fa-server"></i>
         Systems
       </h2>
-      <p class="section-subtitle">Deployed applications and platforms</p>
+      <p class="section-subtitle">Applied research systems, field deployments, and platform-oriented work</p>
     </div>
     <div class="row">
       {% for project in systems %}
@@ -41,7 +41,7 @@ nav_order: 3
         <i class="fa-solid fa-cube"></i>
         Frameworks
       </h2>
-      <p class="section-subtitle">Novel architectures and protocols for decentralized systems</p>
+      <p class="section-subtitle">Architectures, protocols, and analytical models for secure coordination</p>
     </div>
     <div class="row">
       {% for project in frameworks %}

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Patent granted: US20180189449A1 - Tracking Items Used for Providing Medical Services 🎉
+Patent application published: US20180189449A1 - Tracking Items Used for Providing Medical Services

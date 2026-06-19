@@ -9,12 +9,12 @@ last_name: Karumba
 contact_note: >
   Feel free to reach out via email or connect on social media.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Secure AI, blockchain, and distributed systems researcher building privacy-preserving digital trust infrastructure across energy, climate, and regulated data ecosystems.
+  Research scientist in trustworthy AI and secure distributed systems working on AI security, privacy-preserving computation, cyber-physical security, and applied cryptography.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: secure ai, blockchain, distributed systems, privacy-preserving computation, secure multiparty computation, zero-knowledge proofs, federated learning, energy cybersecurity, decentralized identity, carbon-market traceability # add your own keywords or leave empty
+keywords: trustworthy ai, ai security, ai privacy, privacy-preserving computation, secure multiparty computation, zero-knowledge proofs, secure distributed systems, cyber-physical security, applied cryptography, energy cybersecurity # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -87,7 +87,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Research Notes # blog_name will be displayed in your blog page
-blog_description: Occasional writing on secure AI, blockchain, distributed systems, and privacy-preserving digital infrastructure
+blog_description: Occasional writing on AI security, privacy-preserving computation, cyber-physical security, and secure distributed systems
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

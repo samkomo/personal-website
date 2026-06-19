@@ -5,14 +5,15 @@ permalink: /
 nav: true
 nav_order: 1
 cv_pdf: Samuel_CV.pdf
-subtitle: Secure AI, Blockchain & Distributed Systems Researcher.
+subtitle: Research Scientist | Trustworthy AI and Secure Distributed Systems.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><b>Dr. Samuel Karumba – Secure AI, Blockchain & Distributed Systems Researcher</b></p>
+    <p><b>Samuel M. Karumba, PhD</b></p>
+    <p>Research Scientist | Trustworthy AI and Secure Distributed Systems</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -30,104 +31,62 @@ latest_posts:
 
 <div class="about-page-content">
 
-<p class="tagline">Researcher building privacy-preserving AI, blockchain, and distributed systems for digital trust infrastructure.</p>
+<p class="tagline">Applied security and privacy researcher working on AI security, privacy-preserving computation, and secure distributed systems.</p>
 
-<p class="intro-text">I design secure, privacy-preserving distributed systems across blockchain, AI, energy cybersecurity, and digital trust infrastructure. My work spans CSIRO Data61, UNSW, IBM Research Africa, and independent consulting, with contributions to blockchain interoperability, verifiable AI, carbon-market traceability, consumer energy resource cybersecurity, and patented IoT/blockchain systems. I work across African and Australian research ecosystems on cryptographic protocols, privacy-preserving computation, and resilient decentralized system design.</p>
+<p class="intro-text">I build trustworthy systems for sensitive data, critical infrastructure, and multi-party coordination. My work spans GuardlyData, CSIRO Data61, CSIRO Energy, UNSW Sydney, and IBM Research Africa, with contributions across AI security and privacy, applied cryptography, cyber-physical security, secure distributed systems, and resource-constrained platforms. Outputs from that work include peer-reviewed publications, technical reports, deployed research prototypes, and patent filings.</p>
 
 <h2>Research Focus</h2>
 
-<p>I architect <strong>privacy-by-design systems</strong> that embed trust into the foundation of digital ecosystems. My work spans distributed systems, secure AI infrastructure, ubiquitous computing, and applied cryptography:</p>
+<p>My research sits at the boundary between security engineering and applied systems work, with an emphasis on defences that survive real operational constraints.</p>
 
 <div class="research-areas">
   <div class="research-item">
-    <strong>Distributed Systems</strong> - Blockchain security, consensus mechanisms, and cross-chain interoperability
+    <strong>AI Security and Privacy</strong> - Sensitive-data detection, local-first controls, shadow AI governance, and exposure risks across copilots, browsers, IDEs, RAG, and agentic workflows
   </div>
   <div class="research-item">
-    <strong>Ubiquitous Computing</strong> - Context-aware systems, mobile computing, and embedded system integration
+    <strong>Privacy-Preserving Computation</strong> - Secure multiparty computation, zero-knowledge proofs, homomorphic encryption, and confidential analytics
   </div>
   <div class="research-item">
-    <strong>Privacy-Preserving Computation</strong> - Secure multiparty computation and zero-knowledge proofs
+    <strong>Secure Distributed and Cyber-Physical Systems</strong> - Distributed energy systems, smart-inverter threat analysis, decentralized coordination, and resilient system design
   </div>
   <div class="research-item">
-    <strong>Federated Learning</strong> - Privacy-preserving machine learning in distributed environments
+    <strong>Applied Cryptography</strong> - Protocol design for confidentiality, integrity, access control, interoperability, and auditability
   </div>
 </div>
 
 <h2>Current Work</h2>
 
-<p>As a <strong>Research & Innovation Consultant</strong> specializing in secure decentralized systems, I design and deploy blockchain-based data integrity systems and verifiable AI infrastructures for fintech, energy, and climate-tech teams across Africa and Australia. My work focuses on scalable, privacy-preserving, and interoperable architectures for energy systems, carbon markets, decentralized identity, and compliance-aware settlement infrastructure.</p>
+<p>At <strong>GuardlyData</strong>, I work on AI data security and privacy for enterprise AI workflows. This includes building and tuning on-device detection models for sensitive information and secrets, designing local-first redaction and blocking controls, and translating threat models around prompt leakage, source-code exposure, shadow AI, and insider risk into product architecture.</p>
 
-<p><strong>Current research areas:</strong></p>
+<p><strong>Current focus areas:</strong></p>
 <ul>
-<li>Blockchain-based data integrity systems for fintech and energy applications</li>
-<li>Verifiable AI infrastructures with explainability and traceability</li>
-<li>Hyperledger Fabric networks for identity management and permissioned data exchange</li>
-<li>Scalability, performance, and cryptographic audits for blockchain ventures</li>
-<li>DevOps pipelines for blockchain platforms with containerized testing and CI/CD</li>
-<li>Compliance-aware stablecoin, tokenization, and cross-border settlement architectures</li>
+<li>On-device NER and secret-detection models for real-time AI interaction screening</li>
+<li>Local-first privacy controls for browsers, copilots, IDEs, RAG pipelines, and agentic systems</li>
+<li>Threat modeling for prompt leakage, source-code exposure, and risky data movement</li>
+<li>Security requirements for safe enterprise adoption of generative AI in regulated environments</li>
 </ul>
 
-<h2>Selected Impact</h2>
+<h2>Selected Programs</h2>
 
 <ul class="impact-list">
-<li>Developed four blockchain frameworks for decentralized energy security: HARB, PlexiChain, CypherChain, and BAILIF.</li>
-<li>Co-invented three granted US patents in blockchain, IoT, and resource-constrained distributed systems.</li>
-<li>Piloted Agri-Wallet systems that reached 2,000+ smallholder farmers.</li>
-<li>Improved grid-edge incident detection precision by 30% through AI-driven anomaly detection research.</li>
-<li>Delivered research and systems work across CSIRO Data61, UNSW, IBM Research Africa, and independent consulting.</li>
+<li><strong>GuardlyData:</strong> AI-native data protection for enterprise AI workflows.</li>
+<li><strong>CSIRO Data61:</strong> Cybersecurity analysis of consumer energy resources through the CAESER national program.</li>
+<li><strong>CSIRO Energy:</strong> Privacy-preserving data-sharing and semantic building-data work through the Data Clearing House platform.</li>
+<li><strong>UNSW / CSIRO Energy:</strong> Frameworks for privacy-preserving aggregation, interoperability, removability, and scalable coordination in distributed energy systems.</li>
+<li><strong>IBM Research Africa:</strong> Education, agriculture, logistics, and mobile systems built for low-connectivity and resource-constrained environments.</li>
 </ul>
 
-<h2>Research Contributions</h2>
+<h2>Selected Outputs</h2>
 
-<p>I completed my <strong>PhD at UNSW (2024)</strong> on "Blockchain-based Decentralized Energy Systems," developing four novel frameworks:</p>
+<ul class="impact-list">
+<li>Publications across IEEE Internet of Things Journal, Journal of Network and Computer Applications, ACM e-Energy, IEEE ICBC, ACM ICTD, IEEE ICSE-SEIS, and MOBILESoft.</li>
+<li>Two granted US patents and one patent application across mobile, agricultural, and medical-data systems.</li>
+<li>Research systems spanning enterprise AI data protection, critical energy infrastructure security, and privacy-aware distributed coordination.</li>
+</ul>
 
-<div class="frameworks-list">
-  <div class="framework-item">
-    <div class="framework-name">HARB</div>
-    <div class="framework-desc">Hypergraph-Based Adaptive Consortium Blockchain</div>
-    <div class="framework-venue">IEEE Internet of Things Journal</div>
-  </div>
-  <div class="framework-item">
-    <div class="framework-name">PlexiChain</div>
-    <div class="framework-desc">Secure Blockchain-Based Flexibility Aggregator</div>
-    <div class="framework-venue">arXiv Preprint</div>
-  </div>
-  <div class="framework-item">
-    <div class="framework-name">CypherChain</div>
-    <div class="framework-desc">Privacy-Preserving Data Aggregation Framework</div>
-    <div class="framework-venue">IEEE ICBC 2024</div>
-  </div>
-  <div class="framework-item">
-    <div class="framework-name">BAILIF</div>
-    <div class="framework-desc">Blockchain Agnostic Interoperability Framework</div>
-    <div class="framework-venue">IEEE ICBC 2023</div>
-  </div>
-</div>
+<h2>Research Background</h2>
 
-<div class="stats-row">
-  <div class="stat-box">
-    <div class="stat-number">20</div>
-    <div class="stat-text">Publications</div>
-  </div>
-  <div class="stat-box">
-    <div class="stat-number">340</div>
-    <div class="stat-text">Citations</div>
-  </div>
-  <div class="stat-box">
-    <div class="stat-number">3</div>
-    <div class="stat-text">Granted Patents</div>
-  </div>
-</div>
-
-<p>Published in top-tier venues including <strong>IEEE Internet of Things Journal</strong>, <strong>Journal of Network and Computer Applications</strong>, <strong>ACM e-Energy</strong>, and <strong>IEEE ICBC</strong>.</p>
-
-<h2>Core Philosophy</h2>
-
-<blockquote class="philosophy-quote">
-  <strong>Embed trust into the foundation of digital ecosystems. Architect privacy as a right, not a feature.</strong>
-</blockquote>
-
-<p>I believe in building systems that prioritize user privacy and data sovereignty from the ground up, ensuring that security and trust are fundamental properties rather than afterthoughts.</p>
+<p>Before my current AI-security work, I focused on secure distributed energy systems, including HARB, BAILIF, CypherChain, PlexiChain, Temporary Immutability, and EnergiPay. Earlier work at IBM Research Africa covered school information systems, cooperative mobile content distribution, embedded sensing, and applied analytics for public-sector and field deployments.</p>
 
 <p class="contact-cta"><strong>Interested in collaboration?</strong> Feel free to reach out via <a href="mailto:{{ site.data.socials.email }}">email</a> or connect on <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" target="_blank">LinkedIn</a>.</p>
 

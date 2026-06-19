@@ -2,12 +2,12 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: Public code, research prototypes, and implementation artifacts published through GitHub.
+description: Public code, research prototypes, and implementation artifacts across AI security, privacy-preserving computation, and secure distributed systems.
 nav: false
 nav_order: 4
 ---
 
-<p>This page highlights public implementation work connected to my research and systems practice. Selected repositories will appear here as projects are prepared for public release and long-term maintenance.</p>
+<p>This page highlights public implementation work connected to my research and systems practice. Many of the systems I work on are partner-bound, product-facing, or developed inside research programs, so public repositories tend to represent reproducible slices of broader work rather than full production artefacts.</p>
 
 {% if site.data.repositories.github_users %}
 

@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Courses taught, student supervision, and educational contributions across mobile development, blockchain systems, cybersecurity, privacy-preserving computing, and applied distributed systems.
+description: Selected teaching, supervision, and mentoring contributions across mobile systems, web security, distributed systems, and applied computing.
 nav: true
 nav_order: 6
 ---
@@ -11,7 +11,7 @@ nav_order: 6
 
 <h2>Overview</h2>
 
-<p>I have been actively involved in teaching and student supervision at both <strong>Strathmore University</strong> (2015-2017) and the <strong>University of New South Wales (UNSW)</strong> (2020-2023), delivering lectures, supervising labs, and mentoring research students. My teaching aligns with my current CV focus: mobile development, blockchain systems, secure AI infrastructure, privacy-preserving technologies, cybersecurity, and applied distributed systems.</p>
+<p>Teaching has been a supporting part of my research career rather than the main public-facing focus. Across <strong>Strathmore University</strong> (2015-2017) and the <strong>University of New South Wales (UNSW)</strong> (2020-2023), I delivered mobile systems instruction, web security labs, guest lectures on distributed systems, and supervision for thesis and capstone students. These activities complement my broader work in security, trustworthy systems, and applied computing.</p>
 
 <div class="row mt-5 mb-5">
   <div class="col-md-3 col-sm-6 mb-4">
@@ -28,7 +28,7 @@ nav_order: 6
   </div>
   <div class="col-md-3 col-sm-6 mb-4">
     <div class="stat-card text-center">
-      <div class="stat-number">20+</div>
+      <div class="stat-number">15+</div>
       <div class="stat-label">Students Supervised</div>
     </div>
   </div>
@@ -197,7 +197,7 @@ nav_order: 6
 <div class="supervision-section mt-5">
   <div class="section-intro mb-4">
     <h3>Research Thesis Projects</h3>
-    <p class="text-muted">Supervised <strong>5 research thesis projects</strong> at Honours and Masters levels, focusing on cutting-edge topics in blockchain, privacy, and cybersecurity.</p>
+    <p class="text-muted">Supervised <strong>5 research thesis projects</strong> at Honours and Masters levels, focusing on security, privacy, data platforms, and distributed systems.</p>
   </div>
 
   <div class="row">

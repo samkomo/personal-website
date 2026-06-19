@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Began independent research and innovation consulting focused on blockchain-based data integrity systems and verifiable AI infrastructure 🚀
+Joined GuardlyData as a Research Scientist, focusing on AI data security and privacy for enterprise AI workflows.

@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Research publications and patents in blockchain, privacy-preserving computation, secure AI, energy cybersecurity, decentralized energy systems, and digital trust infrastructure.
+description: Research publications, patents, and technical outputs spanning AI security, privacy-preserving computation, secure distributed systems, and cyber-physical energy security.
 nav: true
 nav_order: 2
 ---
@@ -10,7 +10,7 @@ nav_order: 2
 <div class="publications-page">
 
 <div class="publications-intro">
-  <p>My publication record connects blockchain security, privacy-preserving computation, decentralized energy systems, secure AI infrastructure, and ubiquitous computing. The work includes journal articles, conference papers, book chapters, thesis outputs, preprints, reports, and three granted US patents.</p>
+  <p>My publication record spans AI security, privacy-preserving computation, secure distributed systems, and cyber-physical energy security. The current public corpus is anchored in distributed systems, energy security, and applied cryptography, and includes journal articles, conference papers, book chapters, theses, preprints, reports, two granted US patents, and one patent application.</p>
 </div>
 
 <!-- Bibsearch Feature -->
@@ -84,7 +84,7 @@ nav_order: 2
       <div class="patent-title">
         <strong>US20180189449A1</strong> - Tracking Items Used for Providing Medical Services
       </div>
-      <span class="patent-badge">Granted: July 2018</span>
+      <span class="patent-badge">Application: July 2018</span>
     </div>
     <div class="patent-details">
       <a href="https://patents.google.com/patent/US20180189449A1/en" target="_blank" class="patent-link">
