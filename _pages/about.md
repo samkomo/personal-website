@@ -4,7 +4,6 @@ title: About
 permalink: /
 nav: true
 nav_order: 1
-cv_pdf: Samuel_CV.pdf
 subtitle: Research Scientist | Trustworthy AI and Secure Distributed Systems.
 
 profile:
